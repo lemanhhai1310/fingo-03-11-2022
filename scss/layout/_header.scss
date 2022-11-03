@@ -1,5 +1,7 @@
 .header{
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  &.uk-sticky-below{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  }
   &__top{
     background: #F2F2F2;
     &__navItem{
@@ -175,7 +177,7 @@
         top: 50%;
         transform: translateY(-50%);
         margin: 0 !important;
-        left: 48px;
+        left: 49px;
         right: 92px;
         width: auto;
         z-index: 999;

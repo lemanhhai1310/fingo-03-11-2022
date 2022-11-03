@@ -52,7 +52,7 @@
                     </div>
                     <div class="uk-navbar-center">
                         <ul class="uk-navbar-nav">
-                            <li class="phone"><a href="tel:08 999 38383">08 999 38383</a></li>
+                            <li class="phone"><a href="tel:0899938383">08 999 38383</a></li>
                             <li class="email"><a href="mailto:info@fingo.vn">info@fingo.vn</a></li>
                         </ul>
                     </div>
