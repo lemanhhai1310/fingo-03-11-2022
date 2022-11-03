@@ -1,4 +1,175 @@
 .home{
+  &__boxSpace{
+    margin-left: -15px;
+    margin-right: -15px;
+    @include media-breakpoint-up('m'){
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  &__overflow{
+    &__boxshadow{
+      padding-top: 24px;
+      //padding-bottom: 24px;
+    }
+    &__scrollbar{
+      &::-webkit-scrollbar{
+        display: none;
+      }
+    }
+    &__grid{
+
+    }
+    &__column{
+      $x:15px;
+      &:first-child{
+        margin-left: #{$x};
+      }
+      &:last-child{
+        padding-right: #{$x};
+      }
+    }
+  }
+  &__about{
+    background: #FAFAFA;
+    .uk-width-medium{
+      //width: 250px;
+    }
+    &__txt1{
+      color: #{$secondary-color};
+      @extend .fz-24;
+      font-family: $font-BeVietnamPro-Bold;
+      line-height: 1.33;
+    }
+    &__box{
+      &:before{
+        .home__about__column:nth-child(n+2) &{
+          @extend .fz-24;
+          font-family: $font-BeVietnamPro-Bold;
+          content: attr(data-number);
+          border: 3px solid #FAFAFA;
+          width: 48px;
+          height: 48px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          top: 0;
+          transform-origin: 100% 0;
+          transform: translate(0%,-50%);
+          right: 0;
+          z-index: 10;
+          border-radius: 50%;
+          color: #FFFFFF;
+        }
+      }
+      &:after{
+        content: "";
+        .home__about__column:nth-child(n+2):not(:last-child) &{
+          content: "";
+          width: 53px;
+          height: 108px;
+          background: #FAFAFA;
+          display: flex;
+          position: absolute;
+          top: -3px;
+          right: -3px;
+        }
+      }
+      position: relative;
+      text-align: center;
+      min-height: 166px;
+      background: #FAFAFA;
+      border-radius: 50px;
+      justify-content: center;
+      padding: 20px;
+      color: #{$secondary-color};
+      @extend .fz-20;
+      text-transform: uppercase;
+      font-family: $font-BeVietnamPro-Bold;
+      .home__about__column:nth-child(2) &{
+        border: 3px solid #EB5757;
+        &:before{
+          background: #EB5757;
+        }
+      }
+      .home__about__column:nth-child(3) &{
+        border: 3px solid #F2994A;
+        &:before{
+          background: #F2994A;
+        }
+      }
+      .home__about__column:nth-child(4) &{
+        border: 3px solid #F2C94C;
+        &:before{
+          background: #F2C94C;
+        }
+      }
+    }
+    &__column{
+      position: relative;
+      &:nth-child(n+2):not(:last-child){
+        &:before{
+          content: "";
+          width: 22px;
+          height: 24px;
+          position: absolute;
+          display: flex;
+          left: calc(100% - 3px);
+          top: calc(50% + 14px);
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+      &:nth-child(2){
+        &:before{
+          background-image: url("data:image/svg+xml,%3Csvg width='22' height='24' viewBox='0 0 22 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.0607 13.0607C21.6464 12.4749 21.6464 11.5251 21.0607 10.9393L11.5147 1.3934C10.9289 0.807611 9.97919 0.807611 9.3934 1.3934C8.80761 1.97919 8.80761 2.92893 9.3934 3.51472L17.8787 12L9.3934 20.4853C8.80761 21.0711 8.80761 22.0208 9.3934 22.6066C9.97919 23.1924 10.9289 23.1924 11.5147 22.6066L21.0607 13.0607ZM0 13.5H20V10.5H0V13.5Z' fill='%23FF6600'/%3E%3C/svg%3E%0A");
+        }
+      }
+      &:nth-child(3){
+        &:before{
+          background-image: url("data:image/svg+xml,%3Csvg width='22' height='24' viewBox='0 0 22 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.0607 13.0607C21.6464 12.4749 21.6464 11.5251 21.0607 10.9393L11.5147 1.3934C10.9289 0.807611 9.97919 0.807611 9.3934 1.3934C8.80761 1.97919 8.80761 2.92893 9.3934 3.51472L17.8787 12L9.3934 20.4853C8.80761 21.0711 8.80761 22.0208 9.3934 22.6066C9.97919 23.1924 10.9289 23.1924 11.5147 22.6066L21.0607 13.0607ZM0 13.5H20V10.5H0V13.5Z' fill='%23F2994A'/%3E%3C/svg%3E%0A");
+        }
+      }
+    }
+    &__txt2{
+      color: #333333;
+      @extend .fz-24;
+      font-family: $font-BeVietnamPro-Medium;
+      line-height: 1.33;
+    }
+    &__desc{
+      @extend .fz-18;
+      font-family: $font-BeVietnamPro-Regular;
+      line-height: (26/18);
+      color: #333333;
+      span{
+        color: #{$primary-color};
+      }
+    }
+    &__link{
+      color: #{$primary-color};
+      @extend .fz-18;
+      font-family: $font-BeVietnamPro-Regular;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      svg{
+        margin-left: 5px;
+      }
+    }
+
+    $max:90;
+    $min:40;
+    &__item-#{$max}-#{$min}{
+      &:nth-child(n+2){
+        margin-top: #{$min}px;
+        @include media-breakpoint-up('m'){
+          margin-top: #{$max}px;
+        }
+      }
+    }
+  }
   &__spNoibat{
     background: url("images/image11.png")
     ,linear-gradient(90deg, #070707 0%, #003A30 100%);
@@ -9,6 +180,7 @@
       @extend .fz-36;
       font-family: $font-BeVietnamPro-ExtraBold;
       line-height: (53/36);
+      color: #{$secondary-color};
     }
     &__loadMoreBtn{
       background: linear-gradient(270.5deg, #F79922 -0.62%, #FF6B00 99.14%);

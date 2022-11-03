@@ -1,6 +1,55 @@
 <?php $data["title"] = "Homepage"; ?>
 <?php $bodyClass = '' ?>
 <?php require "template-parts/layouts/header.php"; ?>
+<!--Về chúng tôi-->
+<div class="uk-section home__about">
+    <div class="uk-container">
+        <div class="home__about__item-90-40 uk-text-center">
+            <div class="item__15">
+                <h2 class="home__spNoibat__title uk-h2 uk-text-center uk-margin-remove">Về chúng tôi</h2>
+            </div>
+            <div class="item__15">
+                <div class="home__about__desc"><span>Fingo</span> bên cạnh việc cung cấp hệ thống, tư vấn giải pháp về các chương trình vay, thẻ tín dụng phù hợp, Fingo còn hỗ
+                    <br class="uk-visible@m"> trợ xử lý hồ sơ vay vốn tiêu dùng cũng như làm thẻ tín dụng miễn phí cho khách hàng đến khi hoàn thành tất cả mọi
+                    <br class="uk-visible@m"> thủ tục. Các dịch vụ này đều được đỗi ngũ Fingo tư vấn miễn phí.</div>
+            </div>
+            <div class="item__15">
+                <a href="" class="home__about__link" uk-icon="icon: arrow-right">Xem thông tin nhiều hơn</a>
+            </div>
+        </div>
+        <div class="home__about__item-90-40">
+            <div class="uk-overflow-auto home__boxSpace home__overflow__scrollbar home__overflow__boxshadow">
+                <div uk-scrollspy="target: .animation; cls: uk-animation-slide-left-small; delay: 300" class="uk-child-width-1-4@m uk-child-width-auto uk-flex-middle uk-grid-match uk-grid-20 uk-flex-nowrap" uk-grid>
+                    <div class="home__about__column" uk-toggle="cls: home__overflow__column; mode: media; media: (max-width: 959.8px)">
+                        <div class="" uk-toggle="cls: uk-width-medium; mode: media; media: (max-width: 959.8px)">
+                            <div class="item__15">
+                                <div class="home__about__txt1">Cách sử dụng Fingo</div>
+                            </div>
+                            <div class="item__15">
+                                <div class="home__about__txt2">3 bước đơn giản để tìm kiếm sản phẩm tài chính phù hợp với Fingo</div>
+                            </div>
+                        </div>
+                    </div>
+                    <?php
+                    $data = array(
+                        'Nhập thông tin <br> & tìm kiếm',
+                        'So sánh <br> các sản phẩm',
+                        'Chọn sản phẩm <br> phù hợp',
+                    );
+                    foreach ($data as $k=>$v): ?>
+                    <div class="home__about__column animation" uk-toggle="cls: home__overflow__column; mode: media; media: (max-width: 959.8px)">
+                        <div data-number="<?= $k+1; ?>" class="home__about__box uk-height-min-small uk-flex uk-flex-middle" uk-toggle="cls: uk-width-medium; mode: media; media: (max-width: 959.8px)">
+                            <div class="uk-text-center"><?= $v ?></div>
+                        </div>
+                    </div>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/Về chúng tôi-->
+
 <!--Sản phẩm nổi bật-->
 <div class="uk-section home__spNoibat uk-background-cover">
     <div class="uk-container">
