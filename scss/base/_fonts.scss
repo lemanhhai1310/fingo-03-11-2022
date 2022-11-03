@@ -31,6 +31,20 @@
   font-weight:normal;
   font-style:normal;
 }
+@font-face{
+  font-family:'Be Vietnam Pro Medium';
+  font-display: swap;
+  src:local('Be Vietnam Pro Medium'), url('fonts/Be_Vietnam_Pro/BeVietnamPro-Medium.ttf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+@font-face{
+  font-family:'Be Vietnam Pro Light';
+  font-display: swap;
+  src:local('Be Vietnam Pro Light'), url('fonts/Be_Vietnam_Pro/BeVietnamPro-Light.ttf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
 /**
  * --------------------------------------------------------------------
  * Arial

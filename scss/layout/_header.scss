@@ -164,9 +164,22 @@
     }
     &__menuBtn{
       color: #FFFFFF !important;
+      padding-left: 15px;
+      margin-left: -15px;
     }
     &__formSearch{
       margin-top: -5px;
+      transition: all .3s ease-out;
+      .uk-sticky-below &{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0 !important;
+        left: 48px;
+        right: 92px;
+        width: auto;
+        z-index: 999;
+      }
       &__input{
         background: #fff !important;
         border-color: #fff !important;
@@ -200,8 +213,11 @@
     }
     &__navItem{
       min-height: 70px;
+      .uk-sticky-below &{
+        min-height: 62px;
+      }
       @include media-breakpoint-up('m'){
-        min-height: 86px;
+        min-height: 86px !important;
       }
     }
     .uk-navbar-nav{

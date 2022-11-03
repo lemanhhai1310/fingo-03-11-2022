@@ -45,6 +45,20 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Be Vietnam Pro Medium";
+  font-display: swap;
+  src: local("Be Vietnam Pro Medium"), url("fonts/Be_Vietnam_Pro/BeVietnamPro-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Be Vietnam Pro Light";
+  font-display: swap;
+  src: local("Be Vietnam Pro Light"), url("fonts/Be_Vietnam_Pro/BeVietnamPro-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 /**
  * --------------------------------------------------------------------
  * Arial
@@ -482,6 +496,64 @@ body {
 }
 
 @media (min-width: 1600px) {
+  .uk-grid-60-xl {
+    margin-left: -60px !important;
+  }
+  .uk-grid-60-xl > * {
+    padding-left: 60px !important;
+  }
+  .uk-grid-60-xl > .uk-grid-margin {
+    margin-top: 60px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .uk-grid-60-l {
+    margin-left: -60px !important;
+  }
+  .uk-grid-60-l > * {
+    padding-left: 60px !important;
+  }
+  .uk-grid-60-l > .uk-grid-margin {
+    margin-top: 60px !important;
+  }
+}
+
+@media (min-width: 960px) {
+  .uk-grid-60-m {
+    margin-left: -60px !important;
+  }
+  .uk-grid-60-m > * {
+    padding-left: 60px !important;
+  }
+  .uk-grid-60-m > .uk-grid-margin {
+    margin-top: 60px !important;
+  }
+}
+
+@media (min-width: 640px) {
+  .uk-grid-60-s {
+    margin-left: -60px !important;
+  }
+  .uk-grid-60-s > * {
+    padding-left: 60px !important;
+  }
+  .uk-grid-60-s > .uk-grid-margin {
+    margin-top: 60px !important;
+  }
+}
+
+.uk-grid-60 {
+  margin-left: -60px;
+}
+.uk-grid-60 > * {
+  padding-left: 60px;
+}
+.uk-grid-60 > .uk-grid-margin {
+  margin-top: 60px;
+}
+
+@media (min-width: 1600px) {
   .mb-0-xl {
     margin-bottom: 0px !important;
   }
@@ -817,30 +889,44 @@ body {
   margin-top: 50px;
 }
 
-.fz-14 {
+.fz-13, .footer__content__copyright {
+  font-size: 9.3888888889px !important;
+}
+@media screen and (min-width: 640px) {
+  .fz-13, .footer__content__copyright {
+    font-size: calc(9.3888888889px + 0 * ((100vw - 640px) / 560)) !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .fz-13, .footer__content__copyright {
+    font-size: 9.3888888889px !important;
+  }
+}
+
+.fz-14, .footer__content__subnav > li > a {
   font-size: 10.1111111111px !important;
 }
 @media screen and (min-width: 640px) {
-  .fz-14 {
+  .fz-14, .footer__content__subnav > li > a {
     font-size: calc(10.1111111111px + 0 * ((100vw - 640px) / 560)) !important;
   }
 }
 @media screen and (min-width: 1200px) {
-  .fz-14 {
+  .fz-14, .footer__content__subnav > li > a {
     font-size: 10.1111111111px !important;
   }
 }
 
-.fz-15 {
+.fz-15, .footer__content__boxForm__input {
   font-size: 10.8333333333px !important;
 }
 @media screen and (min-width: 640px) {
-  .fz-15 {
+  .fz-15, .footer__content__boxForm__input {
     font-size: calc(10.8333333333px + 0 * ((100vw - 640px) / 560)) !important;
   }
 }
 @media screen and (min-width: 1200px) {
-  .fz-15 {
+  .fz-15, .footer__content__boxForm__input {
     font-size: 10.8333333333px !important;
   }
 }
@@ -859,16 +945,16 @@ body {
   }
 }
 
-.fz-18, .header__bottom .uk-navbar-nav > li > a, .header__bottom__formSearch__input, .header__top .uk-navbar-nav > li > a {
+.fz-18, .footer__content__desc, .footer__content__listAddress > li, .footer__content__nav > li > a, .header__bottom .uk-navbar-nav > li > a, .header__bottom__formSearch__input, .header__top .uk-navbar-nav > li > a {
   font-size: 13px !important;
 }
 @media screen and (min-width: 640px) {
-  .fz-18, .header__bottom .uk-navbar-nav > li > a, .header__bottom__formSearch__input, .header__top .uk-navbar-nav > li > a {
+  .fz-18, .footer__content__desc, .footer__content__listAddress > li, .footer__content__nav > li > a, .header__bottom .uk-navbar-nav > li > a, .header__bottom__formSearch__input, .header__top .uk-navbar-nav > li > a {
     font-size: calc(13px + 0 * ((100vw - 640px) / 560)) !important;
   }
 }
 @media screen and (min-width: 1200px) {
-  .fz-18, .header__bottom .uk-navbar-nav > li > a, .header__bottom__formSearch__input, .header__top .uk-navbar-nav > li > a {
+  .fz-18, .footer__content__desc, .footer__content__listAddress > li, .footer__content__nav > li > a, .header__bottom .uk-navbar-nav > li > a, .header__bottom__formSearch__input, .header__top .uk-navbar-nav > li > a {
     font-size: 13px !important;
   }
 }
@@ -887,16 +973,16 @@ body {
   }
 }
 
-.fz-24 {
+.fz-24, .footer__content__title, .footer__content__boxForm__title {
   font-size: 13.8666666667px !important;
 }
 @media screen and (min-width: 640px) {
-  .fz-24 {
+  .fz-24, .footer__content__title, .footer__content__boxForm__title {
     font-size: calc(13.8666666667px + 3.4666666667 * ((100vw - 640px) / 560)) !important;
   }
 }
 @media screen and (min-width: 1200px) {
-  .fz-24 {
+  .fz-24, .footer__content__title, .footer__content__boxForm__title {
     font-size: 17.3333333333px !important;
   }
 }
@@ -1124,9 +1210,22 @@ body {
 }
 .header__bottom__menuBtn {
   color: #FFFFFF !important;
+  padding-left: 15px;
+  margin-left: -15px;
 }
 .header__bottom__formSearch {
   margin-top: -5px;
+  transition: all 0.3s ease-out;
+}
+.uk-sticky-below .header__bottom__formSearch {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 !important;
+  left: 48px;
+  right: 92px;
+  width: auto;
+  z-index: 999;
 }
 .header__bottom__formSearch__input {
   background: #fff !important;
@@ -1161,10 +1260,15 @@ body {
 .header__bottom .uk-navbar-toggle, .header__bottom .uk-navbar-nav > li > a {
   min-height: 70px;
 }
+.uk-sticky-below .header__bottom__navItem, .uk-sticky-below .header__bottom .uk-navbar-item, .header__bottom .uk-sticky-below .uk-navbar-item,
+.uk-sticky-below .header__bottom .uk-navbar-toggle,
+.header__bottom .uk-sticky-below .uk-navbar-toggle, .uk-sticky-below .header__bottom .uk-navbar-nav > li > a, .header__bottom .uk-sticky-below .uk-navbar-nav > li > a {
+  min-height: 62px;
+}
 @media (min-width: 960px) {
   .header__bottom__navItem, .header__bottom .uk-navbar-item,
 .header__bottom .uk-navbar-toggle, .header__bottom .uk-navbar-nav > li > a {
-    min-height: 86px;
+    min-height: 86px !important;
   }
 }
 .header__bottom .uk-navbar-nav > li > a {
@@ -1195,6 +1299,199 @@ body {
 }
 .header__bottom .uk-navbar-nav > li.uk-active > a:before {
   right: 0;
+}
+.footer {
+  background: #CCD1D7;
+  mix-blend-mode: normal;
+  margin-top: 100px;
+}
+@media (min-width: 960px) {
+  .footer {
+    margin-top: 176px;
+  }
+}
+.footer__bgCanvas {
+  clip-path: ellipse(50% 46% at 50% 50%);
+  background: #CCD1D7;
+  mix-blend-mode: normal;
+  top: -70px;
+  max-width: calc(100vw + 137px + 137px);
+}
+@media (min-width: 960px) {
+  .footer__bgCanvas {
+    clip-path: ellipse(50% 46% at 50% 50%);
+    max-width: inherit;
+    top: -107px;
+  }
+}
+@media (min-width: 960px) {
+  .footer__bgCanvas canvas {
+    width: 2194px !important;
+  }
+}
+.footer__content__top {
+  margin-top: calc(0px - 100px);
+}
+@media (min-width: 960px) {
+  .footer__content__top {
+    margin-top: calc(0px - 176px);
+  }
+}
+.footer__content__boxForm {
+  background-color: rgb(1, 68, 82);
+  border-radius: 10px;
+}
+@media (min-width: 960px) {
+  .footer__content__boxForm {
+    border-radius: 10px;
+    background-color: transparent;
+    min-height: 202px;
+  }
+}
+.footer__content__boxForm__title {
+  font-family: "Be Vietnam Pro Bold", sans-serif;
+}
+.footer__content__boxForm__input {
+  width: 393px;
+  font-family: "Be Vietnam Pro Medium", sans-serif;
+  padding-left: 23px !important;
+  padding-right: 110px !important;
+  height: calc(55px - 0px);
+}
+.footer__content__boxForm__btnSubmit {
+  line-height: calc(55px - 8px);
+  transform: translateY(-50%) !important;
+  position: absolute;
+  top: 50% !important;
+  right: 3px !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='18' viewBox='0 0 20 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.3764 0.693215L0.657315 7.62914C-0.0557314 7.95214 -0.296903 8.59897 0.484971 8.95001L5.03067 10.4164L16.0216 3.52134C16.6217 3.08848 17.2361 3.2039 16.7074 3.68008L7.2677 12.356L6.97118 16.0276C7.24583 16.5945 7.74872 16.5972 8.0695 16.3154L10.6811 13.807L15.154 17.2068C16.1929 17.8311 16.7581 17.4283 16.9816 16.284L19.9154 2.18264C20.22 0.774161 19.7006 0.15357 18.3764 0.693215Z' fill='url(%23paint0_linear_1219_155)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_1219_155' x1='20.2178' y1='8.46875' x2='0.0937985' y2='8.26022' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23F79922'/%3E%3Cstop offset='1' stop-color='%23FF6B00'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+}
+.footer__content__boxForm__btnSubmit svg {
+  visibility: hidden;
+}
+.footer__content__title {
+  color: #333333;
+  text-transform: uppercase;
+  font-family: "Be Vietnam Pro Medium", sans-serif;
+  line-height: 1.33;
+}
+.footer__content__nav > li > a {
+  color: #333333;
+  font-family: "Be Vietnam Pro Regular", sans-serif;
+}
+.footer__content__nav > li > a:before {
+  content: ">";
+  margin-right: 5px;
+}
+.footer__content__nav > li > a:hover {
+  color: #F5821F;
+}
+.footer__content__listAddress > li {
+  color: #333333;
+  font-family: "Be Vietnam Pro Light", sans-serif;
+  padding-left: 34px;
+  position: relative;
+}
+.footer__content__listAddress > li:before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+.footer__content__listAddress > li.maps:before {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.2107 4.70155C16.8565 2.25676 14.7421 1.0923 12.055 1.004C10.6419 0.954336 9.32507 1.36824 8.13674 2.15742C6.18832 3.4488 5.12311 5.29206 5 7.68719C5.01071 8.03487 5.02676 8.37151 5.10706 8.70263C5.39611 9.86708 5.89927 10.9377 6.48808 11.9642C8.2545 15.0657 9.28224 17.7092 10.7329 20.9818C11.4287 22.5436 12.9703 22.1187 13.4307 20.9818C14.0462 19.4586 14.1694 18.5536 14.9723 17.1297C16.1124 15.1099 16.9742 12.9852 18.0341 10.9156C18.4302 10.143 18.7942 9.35384 18.928 8.4874C19.1475 7.14083 18.8531 5.87152 18.2107 4.70155ZM14.1051 10.281C12.0603 11.6772 9.34648 10.8494 8.36156 8.53155C8.18492 8.11765 8.11533 7.69822 8.11533 7.10772C8.0618 5.73907 9.0146 4.14968 10.6151 3.58677C12.5367 2.90797 14.6083 3.74129 15.4647 5.66181C16.1874 7.28432 15.6146 9.24899 14.1051 10.281Z' fill='%23F5821F'/%3E%3C/svg%3E%0A");
+}
+.footer__content__listAddress > li.phone:before {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.80836 5.00024C8.96117 5.00025 9.1112 5.04114 9.24287 5.11869C9.37455 5.19623 9.48307 5.3076 9.55719 5.44124L10.6044 7.32766C10.672 7.44935 10.7088 7.58566 10.7118 7.72479C10.7148 7.86393 10.6838 8.00169 10.6216 8.12616L9.61285 10.1445C9.61285 10.1445 9.90527 11.6477 11.1289 12.8718C12.353 14.0954 13.8511 14.3831 13.8511 14.3831L15.869 13.374C15.9935 13.3117 16.1313 13.2807 16.2705 13.2836C16.4098 13.2866 16.5461 13.3235 16.6679 13.3911L18.5603 14.4435C18.6936 14.5177 18.8047 14.6263 18.882 14.7579C18.9593 14.8894 19.0001 15.0393 19 15.1919V17.3639C19 18.4702 17.9725 19.2692 16.9243 18.9155C14.7716 18.1889 11.4299 16.806 9.31186 14.688C7.19423 12.5699 5.81088 9.22864 5.08474 7.07548C4.73109 6.0278 5.53002 5.00024 6.63635 5.00024H8.80793H8.80836Z' stroke='%23F5821F' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
+.footer__content__listAddress > li.email:before {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.5 9.9H14.8M8.5 12.7H14.8M8.5 15.5H12M19 12C19 15.8661 15.8661 19 12 19H5V12C5 8.1339 8.1339 5 12 5C15.8661 5 19 8.1339 19 12Z' stroke='%23F5821F' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
+.footer__content__line:before {
+  left: 0;
+}
+.footer__content__line:after {
+  right: 0;
+}
+.footer__content__line:before, .footer__content__line:after {
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 5px;
+  background: #828282;
+  border-radius: 50%;
+  display: flex;
+}
+.footer__content__line hr {
+  border-color: #828282;
+}
+.footer__content__subnav > li:nth-child(n+2):before {
+  border-color: rgba(10, 20, 47, 0.7) !important;
+  height: 13px;
+}
+.footer__content__subnav > li > a {
+  color: rgba(10, 20, 47, 0.7) !important;
+  text-transform: inherit !important;
+}
+.footer__content__desc {
+  color: #333333;
+  line-height: 1.4444444444;
+  font-family: "Be Vietnam Pro Light", sans-serif;
+}
+.footer__content__copyright {
+  color: #333333;
+  line-height: 1.85;
+  font-family: "Be Vietnam Pro Light", sans-serif;
+}
+.footer__item-48-20:nth-child(n+2) {
+  margin-top: 20px;
+}
+@media (min-width: 960px) {
+  .footer__item-48-20:nth-child(n+2) {
+    margin-top: 48px;
+  }
+}
+.footer__item-30-15:nth-child(n+2) {
+  margin-top: 15px;
+}
+@media (min-width: 960px) {
+  .footer__item-30-15:nth-child(n+2) {
+    margin-top: 30px;
+  }
+}
+.footer__item-24-20:nth-child(n+2) {
+  margin-top: 20px;
+}
+@media (min-width: 960px) {
+  .footer__item-24-20:nth-child(n+2) {
+    margin-top: 24px;
+  }
+}
+.footer__item-19-15:nth-child(n+2) {
+  margin-top: 15px;
+}
+@media (min-width: 960px) {
+  .footer__item-19-15:nth-child(n+2) {
+    margin-top: 19px;
+  }
+}
+
+.home__spNoibat {
+  background: url("images/image11.png"), linear-gradient(90deg, #070707 0%, #003A30 100%);
+  min-height: 941px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /*# sourceMappingURL=style.css.map */
