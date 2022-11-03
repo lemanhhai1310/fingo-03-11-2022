@@ -1,3 +1,10 @@
 body{
-  font-family: $font-Roboto;
+  font-family: $font-BeVietnamPro-Regular;
+  background: #{$primary-color};
+  @include media-breakpoint-up('m'){
+    background: #FAFAFA;
+  }
+}
+#app{
+  background: #FFFFFF;
 }

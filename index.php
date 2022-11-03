@@ -1,4 +1,4 @@
-<?php $data["title"] = "Home"; ?>
+<?php $data["title"] = "Homepage"; ?>
 <?php $bodyClass = '' ?>
 <?php require "template-parts/layouts/header.php"; ?>
 
