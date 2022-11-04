@@ -2,7 +2,7 @@
 <?php $bodyClass = '' ?>
 <?php require "template-parts/layouts/header.php"; ?>
 <div class="uk-height-viewport">
-    
+
 </div>
 <!--Về chúng tôi-->
 <div class="uk-section home__about">
