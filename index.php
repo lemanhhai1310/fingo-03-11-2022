@@ -1,6 +1,9 @@
 <?php $data["title"] = "Homepage"; ?>
 <?php $bodyClass = '' ?>
 <?php require "template-parts/layouts/header.php"; ?>
+<div class="uk-height-viewport">
+    
+</div>
 <!--Về chúng tôi-->
 <div class="uk-section home__about">
     <div class="uk-container">
@@ -318,9 +321,86 @@
         </div>
         <!--/Khách hàng nói gì về Fingo-->
 
+        <!--Tin tức mới-->
         <div class="home__baochi__item-115-60">
+            <div class="home__blog__item-75-30">
+                <div class="uk-grid-small uk-grid-50-m" uk-grid>
+                    <div class="uk-width-1-4@m">
+                        <h2 class="home__spNoibat__title uk-h2 uk-margin-remove">Tin tức mới</h2>
+                        <div class="item__10 home__blog__txt">Các sự kiện sắp tới, cẩm nang và tin tức mới nhất từ Fingo</div>
+                    </div>
+                    <div class="uk-width-expand">
+                        <div class="uk-child-width-1-3@m uk-grid-small uk-grid-20-m" uk-grid>
+                            <?php
+                            $data = array(
+                                'Kiến thức vay',
+                                'Tài chính cá nhân',
+                                'Kiến thức vay',
+                            );
+                            foreach ($data as $k=>$v): ?>
+                            <div>
+                                <div class="home__blog__card uk-card uk-card-default">
+                                    <div class="uk-cover-container">
+                                        <img src="https://picsum.photos/285/250/?random=<?= $k ?>" alt="" uk-cover="">
+                                        <canvas width="285" height="250"></canvas>
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <div class="home__blog__card__label"><?= $v ?></div>
+                                        <h3 class="uk-h3 home__blog__card__title item__10 uk-margin-remove-bottom"><a href="">Hướng dẫn sử dụng?...</a></h3>
+                                        <div class="uk-child-width-auto item__10" uk-grid>
+                                            <div>
+                                                <span class="home__blog__card__txtSmall" uk-icon="icon: calendar; ratio:0.8;">17/10/2022</span>
+                                            </div>
+                                            <div>
+                                                <span class="home__blog__card__txtSmall" uk-icon="icon: heart; ratio:0.8;">23</span>
+                                            </div>
+                                        </div>
+                                        <div class="home__blog__card__desc item__10">Các thông tin mới nhất luôn được  cập nhật...</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <?php endforeach; ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="home__blog__item-75-30">
+                <div uk-slider="autoplay: true">
 
+                    <div class="uk-position-relative">
+
+                        <div class="uk-slider-container uk-light">
+                            <ul class="uk-slider-items uk-flex-middle uk-child-width-1-3 uk-child-width-1-3@s uk-child-width-1-5@m uk-flex-middle" uk-grid>
+                                <?php
+                                $data = array(
+                                    'images/logo-bidv-2022-dongphucsongphu1.png',
+                                    'images/Logo-TPBank1.png',
+                                    'images/vietcombank-logo-11.png',
+                                    'images/logo-ngan-hang-vpbank1.png',
+                                    'images/logo-mbbanksd1.png',
+
+                                    'images/logo-bidv-2022-dongphucsongphu1.png',
+                                    'images/Logo-TPBank1.png',
+                                    'images/vietcombank-logo-11.png',
+                                    'images/logo-ngan-hang-vpbank1.png',
+                                    'images/logo-mbbanksd1.png',
+                                );
+                                foreach ($data as $k=>$v): ?>
+                                <li class="uk-text-center">
+                                    <img src="<?= $v ?>" alt="">
+                                </li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <ul class="uk-slider-nav home__blog__dotnav uk-dotnav uk-flex-center uk-margin-medium-top"></ul>
+
+                </div>
+            </div>
         </div>
+        <!--/Tin tức mới-->
     </div>
 </div>
 

@@ -30,8 +30,82 @@
       }
     }
   }
+  &__blog{
+    &__card{
+      border-radius: 20px 20px 0px 0px;
+      overflow: hidden;
+      .uk-card-body{
+        padding: 15px 15px;
+        @include media-breakpoint-up('m'){
+          padding: 30px 12px;
+        }
+      }
+      &__title{
+        color: #333333;
+        @extend .fz-24;
+        line-height: 1.33;
+        font-family: $font-BeVietnamPro-Medium;
+        a{
+          color: #333333;
+        }
+      }
+      &__desc{
+        color: #161B3D;
+        @extend .fz-18;
+        line-height: 1.78;
+      }
+      &__label{
+        color: #{$primary-color};
+        @extend .fz-16;
+        font-family: $font-BeVietnamPro-Medium;
+        line-height: 2;
+      }
+      &__txtSmall{
+        color: #7B7485;
+        @extend .fz-12;
+        line-height: 1.75;
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        svg{
+          margin-right: 5px;
+        }
+      }
+    }
+    &__txt{
+      color: #828282;
+      @extend .fz-36;
+      font-family: $font-BeVietnamPro-Medium;
+      line-height: (53/36);
+    }
+    &__dotnav{
+      >*{
+        &.uk-active{
+          >*{
+            width: 21px;
+            border-radius: 19px;
+            background: #333333;
+          }
+        }
+        >*{
+          width: 8px;
+          height: 8px;
+          background: rgba(51, 51, 51, 0.6);
+        }
+      }
+    }
+    $max:75;
+    $min:30;
+    &__item-#{$max}-#{$min}{
+      &:nth-child(n+2){
+        margin-top: #{$min}px;
+        @include media-breakpoint-up('m'){
+          margin-top: #{$max}px;
+        }
+      }
+    }
+  }
   &__khachhang{
-
     &__card{
       border-radius: 50px;
       &:before{
