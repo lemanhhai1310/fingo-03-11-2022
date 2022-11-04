@@ -619,6 +619,64 @@ body {
 }
 
 @media (min-width: 1600px) {
+  .uk-grid-169-xl {
+    margin-left: -169px !important;
+  }
+  .uk-grid-169-xl > * {
+    padding-left: 169px !important;
+  }
+  .uk-grid-169-xl > .uk-grid-margin {
+    margin-top: 169px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .uk-grid-169-l {
+    margin-left: -169px !important;
+  }
+  .uk-grid-169-l > * {
+    padding-left: 169px !important;
+  }
+  .uk-grid-169-l > .uk-grid-margin {
+    margin-top: 169px !important;
+  }
+}
+
+@media (min-width: 960px) {
+  .uk-grid-169-m {
+    margin-left: -169px !important;
+  }
+  .uk-grid-169-m > * {
+    padding-left: 169px !important;
+  }
+  .uk-grid-169-m > .uk-grid-margin {
+    margin-top: 169px !important;
+  }
+}
+
+@media (min-width: 640px) {
+  .uk-grid-169-s {
+    margin-left: -169px !important;
+  }
+  .uk-grid-169-s > * {
+    padding-left: 169px !important;
+  }
+  .uk-grid-169-s > .uk-grid-margin {
+    margin-top: 169px !important;
+  }
+}
+
+.uk-grid-169 {
+  margin-left: -169px;
+}
+.uk-grid-169 > * {
+  padding-left: 169px;
+}
+.uk-grid-169 > .uk-grid-margin {
+  margin-top: 169px;
+}
+
+@media (min-width: 1600px) {
   .mb-0-xl {
     margin-bottom: 0px !important;
   }
@@ -1010,16 +1068,16 @@ body {
   }
 }
 
-.fz-16, .home__baochi__link1, .home__khachhang__txt, .home__khachhang__desc, .home__blog__card__label, .header__bottom__btn, .header__top__langSwitch__txt {
+.fz-16, .home__baochi__link1, .home__khachhang__txt, .home__khachhang__desc, .home__blog__card__label, .home__banner__btn, .home__banner__input, .home__banner__label, .header__bottom__btn, .header__top__langSwitch__txt {
   font-size: 13.1764705882px !important;
 }
 @media screen and (min-width: 640px) {
-  .fz-16, .home__baochi__link1, .home__khachhang__txt, .home__khachhang__desc, .home__blog__card__label, .header__bottom__btn, .header__top__langSwitch__txt {
+  .fz-16, .home__baochi__link1, .home__khachhang__txt, .home__khachhang__desc, .home__blog__card__label, .home__banner__btn, .home__banner__input, .home__banner__label, .header__bottom__btn, .header__top__langSwitch__txt {
     font-size: calc(13.1764705882px + 0 * ((100vw - 640px) / 560)) !important;
   }
 }
 @media screen and (min-width: 1200px) {
-  .fz-16, .home__baochi__link1, .home__khachhang__txt, .home__khachhang__desc, .home__blog__card__label, .header__bottom__btn, .header__top__langSwitch__txt {
+  .fz-16, .home__baochi__link1, .home__khachhang__txt, .home__khachhang__desc, .home__blog__card__label, .home__banner__btn, .home__banner__input, .home__banner__label, .header__bottom__btn, .header__top__langSwitch__txt {
     font-size: 13.1764705882px !important;
   }
 }
@@ -1038,16 +1096,16 @@ body {
   }
 }
 
-.fz-20, .home__about__box, .home__khachhang__name, .header__top .uk-search-input {
+.fz-20, .home__about__box, .home__khachhang__name, .home__banner__desc span, .header__top .uk-search-input {
   font-size: 14.8235294118px !important;
 }
 @media screen and (min-width: 640px) {
-  .fz-20, .home__about__box, .home__khachhang__name, .header__top .uk-search-input {
+  .fz-20, .home__about__box, .home__khachhang__name, .home__banner__desc span, .header__top .uk-search-input {
     font-size: calc(14.8235294118px + 1.6470588235 * ((100vw - 640px) / 560)) !important;
   }
 }
 @media screen and (min-width: 1200px) {
-  .fz-20, .home__about__box, .home__khachhang__name, .header__top .uk-search-input {
+  .fz-20, .home__about__box, .home__khachhang__name, .home__banner__desc span, .header__top .uk-search-input {
     font-size: 16.4705882353px !important;
   }
 }
@@ -1080,16 +1138,16 @@ body {
   }
 }
 
-.fz-36, .home__spNoibat__title, .home__blog__txt {
+.fz-36, .home__spNoibat__title, .home__blog__txt, .home__banner__title, .home__banner__legend {
   font-size: 20.7529411765px !important;
 }
 @media screen and (min-width: 640px) {
-  .fz-36, .home__spNoibat__title, .home__blog__txt {
+  .fz-36, .home__spNoibat__title, .home__blog__txt, .home__banner__title, .home__banner__legend {
     font-size: calc(20.7529411765px + 8.8941176471 * ((100vw - 640px) / 560)) !important;
   }
 }
 @media screen and (min-width: 1200px) {
-  .fz-36, .home__spNoibat__title, .home__blog__txt {
+  .fz-36, .home__spNoibat__title, .home__blog__txt, .home__banner__title, .home__banner__legend {
     font-size: 29.6470588235px !important;
   }
 }
@@ -1619,6 +1677,110 @@ body {
 }
 .home__overflow__column:last-child {
   padding-right: 15px;
+}
+.home__banner {
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-image: url("data:image/svg+xml,%3Csvg width='905' height='716' viewBox='0 0 905 716' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M385.796 0L882 0V630.376C866.276 652.522 848.949 672.969 830.236 691.455C787.621 707.351 741.767 716 694 716C468.116 716 285 522.587 285 284C285 175.277 323.026 75.9339 385.796 0Z' fill='%23F6F6E9'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M426.796 0L923 0V630.376C907.276 652.522 889.949 672.969 871.236 691.455C828.621 707.351 782.767 716 735 716C509.116 716 326 522.587 326 284C326 175.277 364.026 75.9339 426.796 0Z' fill='%23E0E0DE'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M472.796 0L969 0V630.376C953.276 652.522 935.949 672.969 917.236 691.455C874.621 707.351 828.767 716 781 716C555.116 716 372 522.587 372 284C372 175.277 410.026 75.9339 472.796 0Z' fill='%23E5E5E5'/%3E%3Ccircle cx='246.5' cy='292.5' r='246.5' fill='%23F26628'/%3E%3Ccircle cx='246.5' cy='292.5' r='203.5' fill='%23F2994A'/%3E%3C/svg%3E%0A");
+}
+.home__banner__legend {
+  text-transform: capitalize;
+  color: #038C4B;
+  line-height: 1.61;
+  font-family: "Be Vietnam Pro SemiBold", sans-serif;
+  text-align: center;
+}
+.home__banner__icon {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.home__banner__icon svg {
+  visibility: hidden;
+}
+.home__banner__icon--user {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21' stroke='%23038C4B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z' stroke='%23038C4B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M23 20.9999V18.9999C22.9993 18.1136 22.7044 17.2527 22.1614 16.5522C21.6184 15.8517 20.8581 15.3515 20 15.1299' stroke='%23038C4B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16 3.12988C16.8604 3.35018 17.623 3.85058 18.1676 4.55219C18.7122 5.2538 19.0078 6.11671 19.0078 7.00488C19.0078 7.89305 18.7122 8.75596 18.1676 9.45757C17.623 10.1592 16.8604 10.6596 16 10.8799' stroke='%23038C4B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
+.home__banner__icon--calendar {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M20.66 4.88C20.73 4.99 20.79 5.1 20.84 5.22C20.94 5.46 21 5.72 21 6V20C21 20.41 20.87 20.8 20.66 21.12C20.52 21.33 20.33 21.52 20.12 21.66C20.01 21.73 19.9 21.79 19.78 21.84C19.54 21.94 19.28 22 19 22H5C3.89 22 3 21.1 3 20V6C3 5.72 3.06 5.46 3.16 5.22C3.21 5.1 3.27 4.99 3.34 4.88C3.48 4.67 3.67 4.48 3.88 4.34C4.2 4.13 4.58 4 5 4H6V2H8V4H16V2H18V4H19C19.28 4 19.54 4.06 19.78 4.16C19.9 4.21 20.01 4.27 20.12 4.34C20.33 4.48 20.52 4.67 20.66 4.88ZM5 6V20H19V6H5ZM12 13.88C9.97 13.88 6 14.96 6 17.46V19H18V17.47C18 14.96 14.03 13.88 12 13.88ZM12 15.88C10.69 15.88 9 16.44 8.31 17H15.69C15.01 16.44 13.31 15.88 12 15.88ZM12 13C13.65 13 15 11.65 15 10C15 8.35 13.65 7 12 7C10.35 7 9 8.35 9 10C9 11.65 10.35 13 12 13ZM13 10C13 9.45 12.55 9 12 9C11.45 9 11 9.45 11 10C11 10.55 11.45 11 12 11C12.55 11 13 10.55 13 10Z' fill='%23038C4B'/%3E%3C/svg%3E%0A");
+}
+.home__banner__checkBox {
+  background-color: #fff;
+}
+.home__banner__checkBox:checked {
+  background-color: #F5821F;
+}
+.home__banner__btnSelect {
+  position: relative;
+  text-align: left;
+  padding-left: 10px;
+  text-transform: inherit;
+  border: 1px solid #828282;
+  border-radius: 5px;
+}
+.home__banner__btnSelect .uk-icon {
+  right: 10px;
+}
+.home__banner__label {
+  color: #333333;
+  line-height: 1.5;
+}
+.home__banner__input {
+  border: 1px solid #828282;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #BDBDBD;
+}
+.home__banner__input::placeholder {
+  color: #BDBDBD;
+}
+.home__banner__input:focus {
+  border-color: #F5821F;
+}
+.home__banner__title {
+  color: #038C4B;
+  font-family: "Be Vietnam Pro Bold", sans-serif;
+  line-height: 1.4722222222;
+}
+.home__banner__desc {
+  color: #333333;
+}
+.home__banner__desc span {
+  color: #F5821F;
+  line-height: 1.45;
+}
+.home__banner__btn {
+  font-family: "Be Vietnam Pro Bold", sans-serif;
+  color: #4F4F4F;
+}
+.home__banner__card {
+  background: rgba(255, 255, 255, 0.75);
+  /* af bg */
+  backdrop-filter: blur(5px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 20px;
+  padding: 20px;
+}
+.home__banner__item-32-15:nth-child(n+2) {
+  margin-top: 15px;
+}
+@media (min-width: 960px) {
+  .home__banner__item-32-15:nth-child(n+2) {
+    margin-top: 32px;
+  }
+}
+.home__banner__imgBottom {
+  bottom: 44px;
+}
+.home__banner__bg {
+  width: 1920px;
+  height: 435px;
+  background-image: url("data:image/svg+xml,%3Csvg width='1920' height='435' viewBox='0 0 1920 435' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1761.22 86.7474C1813.52 63.9898 1888.87 169.379 1920 224.918V377H0V64C0 64 26.3413 68.3472 61.2968 107.067C125.01 177.64 84.6473 86.7474 182.72 74.5558C280.792 62.3642 164.039 224.918 234.091 237.11C304.142 249.301 299.472 241.174 322.823 294.004C346.173 346.834 392.875 360.191 448.916 331.744C504.957 303.297 476.937 196.471 603.029 265.557C729.122 334.643 775.823 269.621 855.215 224.918C934.607 180.216 925.267 123.322 1102.73 294.004C1280.2 464.686 1322.23 294.004 1354.92 249.302C1387.61 204.599 1401.62 192.408 1523.04 196.471C1644.46 200.535 1695.83 115.194 1761.22 86.7474Z' fill='url(%23paint0_linear_1818_1376)'/%3E%3Cpath d='M1761.22 86.7474L1761.62 87.6644L1761.22 86.7474ZM61.2968 107.067L60.5544 107.737L61.2968 107.067ZM1919.13 225.407C1903.59 197.683 1877.01 157.528 1847.83 127.165C1833.23 111.979 1818.02 99.2931 1803.26 91.8177C1788.5 84.3434 1774.31 82.1389 1761.62 87.6644L1760.82 85.8304C1774.27 79.9771 1789.12 82.4122 1804.17 90.0334C1819.21 97.6535 1834.6 110.519 1849.27 125.779C1878.61 156.305 1905.28 196.615 1920.87 224.429L1919.13 225.407ZM1761.62 87.6644C1745.38 94.7267 1729.99 105.334 1714.09 117.264C1698.22 129.173 1681.83 142.42 1663.7 154.63C1627.4 179.088 1584 199.512 1523.01 197.471L1523.07 195.472C1583.51 197.495 1626.5 177.28 1662.59 152.972C1680.65 140.799 1696.95 127.63 1712.89 115.664C1728.81 103.72 1744.36 92.9916 1760.82 85.8304L1761.62 87.6644ZM1523.01 197.471C1462.28 195.438 1428.6 197.486 1406.04 205.541C1383.58 213.558 1372.06 227.549 1355.72 249.892L1354.11 248.711C1370.46 226.352 1382.29 211.896 1405.37 203.657C1428.34 195.457 1462.38 193.441 1523.07 195.472L1523.01 197.471ZM1355.72 249.892C1351.68 255.416 1347.48 262.913 1342.85 271.531C1338.24 280.127 1333.21 289.819 1327.54 299.647C1316.22 319.296 1302.27 339.639 1283.7 353.229C1265.09 366.855 1241.88 373.66 1212.16 366.282C1182.51 358.92 1146.46 337.45 1102.04 294.725L1103.42 293.283C1147.73 335.898 1183.48 357.1 1212.65 364.341C1241.75 371.568 1264.36 364.912 1282.52 351.615C1300.74 338.281 1314.52 318.24 1325.81 298.648C1331.46 288.855 1336.46 279.212 1341.09 270.584C1345.71 261.978 1349.98 254.363 1354.11 248.711L1355.72 249.892ZM1102.04 294.725C1057.68 252.062 1025.03 223.657 999.775 205.732C974.502 187.796 956.743 180.438 942.145 179.691C927.595 178.946 916.002 184.759 902.992 193.677C890.028 202.563 875.6 214.588 855.706 225.79L854.725 224.047C874.527 212.897 888.702 201.047 901.862 192.027C914.976 183.038 927.025 176.914 942.247 177.693C957.421 178.47 975.564 186.097 1000.93 204.101C1026.32 222.116 1059.05 250.605 1103.42 293.283L1102.04 294.725ZM855.706 225.79C835.893 236.946 818.145 249.354 800.592 260.682C783.066 271.994 765.764 282.207 746.969 288.851C709.282 302.174 665.786 301.081 602.549 266.434L603.51 264.68C666.366 299.118 709.267 300.058 746.302 286.965C764.867 280.402 782.008 270.296 799.507 259.002C816.98 247.725 834.842 235.242 854.725 224.047L855.706 225.79ZM602.549 266.434C571.076 249.19 549.391 243.206 533.698 244.204C518.107 245.195 508.285 253.091 500.521 264.101C496.625 269.625 493.26 275.919 489.953 282.515C486.657 289.088 483.407 295.987 479.784 302.612C472.529 315.875 463.651 328.284 449.368 335.534L448.463 333.751C462.201 326.777 470.836 314.803 478.029 301.652C481.63 295.069 484.839 288.252 488.165 281.618C491.48 275.006 494.9 268.601 498.886 262.949C506.883 251.608 517.2 243.249 533.571 242.208C549.839 241.174 571.936 247.381 603.51 264.68L602.549 266.434ZM449.368 335.534C421.185 349.84 395.219 352.97 373.297 345.752C351.367 338.531 333.668 321.016 321.908 294.408L323.737 293.6C335.328 319.822 352.655 336.85 373.923 343.852C395.2 350.858 420.605 347.892 448.463 333.751L449.368 335.534ZM321.908 294.408C316.059 281.174 311.999 271.839 308.091 265.039C304.203 258.272 300.518 254.112 295.468 251.182C290.377 248.229 283.815 246.474 274.046 244.698C264.231 242.913 251.519 241.158 233.919 238.095L234.262 236.125C251.689 239.158 264.662 240.958 274.403 242.73C284.19 244.509 291.055 246.31 296.472 249.453C301.929 252.619 305.833 257.095 309.826 264.043C313.799 270.958 317.912 280.419 323.737 293.6L321.908 294.408ZM233.919 238.095C224.932 236.531 218.836 232.526 214.96 226.677C211.11 220.868 209.524 213.351 209.303 204.879C208.861 187.971 213.862 166.735 217.933 146.492C219.975 136.336 221.79 126.413 222.605 117.327C223.422 108.232 223.229 100.057 221.308 93.3733C219.398 86.7229 215.789 81.5775 209.749 78.4268C203.67 75.2559 194.998 74.0372 182.843 75.5482L182.596 73.5635C194.959 72.0266 204.093 73.2208 210.674 76.6536C217.294 80.1067 221.201 85.7559 223.231 92.821C225.251 99.8527 225.423 108.314 224.597 117.506C223.771 126.708 221.937 136.723 219.893 146.886C215.792 167.282 210.868 188.209 211.302 204.827C211.519 213.119 213.071 220.206 216.627 225.572C220.157 230.899 225.737 234.641 234.262 236.125L233.919 238.095ZM182.843 75.5482C158.497 78.5747 142.815 86.4726 131.971 95.4728C121.106 104.491 115.048 114.65 109.959 122.397C107.436 126.239 105.099 129.57 102.502 131.771C99.8475 134.022 96.8782 135.127 93.1787 134.459C89.5706 133.806 85.3762 131.484 80.1509 127.206C74.9078 122.914 68.5308 116.572 60.5544 107.737L62.0391 106.397C69.991 115.205 76.2898 121.461 81.4177 125.658C86.5631 129.871 90.4347 131.93 93.5345 132.491C96.5431 133.034 98.9241 132.183 101.209 130.246C103.553 128.259 105.745 125.17 108.288 121.299C113.332 113.62 119.553 103.181 130.694 93.9339C141.857 84.6683 157.906 76.6328 182.596 73.5635L182.843 75.5482ZM60.5544 107.737C43.1494 88.4575 27.9143 77.7632 17.0642 71.8931C11.6384 68.9576 7.30615 67.2269 4.34375 66.2322C2.86243 65.7349 1.72314 65.4214 0.960693 65.2333C0.579346 65.1393 0.292236 65.0766 0.103638 65.0379C0.00927734 65.0186 -0.0605469 65.0052 -0.105103 64.997C-0.127319 64.9929 -0.143311 64.99 -0.152954 64.9884C-0.157837 64.9875 -0.161011 64.987 -0.16272 64.9867C-0.163574 64.9865 -0.16394 64.9865 -0.16394 64.9865C-0.16394 64.9865 -0.163696 64.9865 -0.163696 64.9865C-0.16333 64.9866 -0.162842 64.9867 0 64C0.162842 63.0133 0.163574 63.0135 0.164307 63.0136C0.164673 63.0137 0.165649 63.0138 0.166382 63.0139C0.167969 63.0142 0.169922 63.0145 0.172363 63.0149C0.177124 63.0158 0.183472 63.0169 0.191528 63.0182C0.207397 63.021 0.229736 63.025 0.258301 63.0303C0.315552 63.0409 0.398071 63.0567 0.505127 63.0786C0.71936 63.1226 1.03235 63.1911 1.43958 63.2915C2.25415 63.4924 3.44592 63.8211 4.98035 64.3363C8.04919 65.3667 12.4871 67.1428 18.0159 70.134C29.0754 76.1174 44.4886 86.9564 62.0391 106.397L60.5544 107.737Z' fill='%23F26628'/%3E%3Crect x='1428.5' y='83' width='1' height='313' fill='%23F2F2F2'/%3E%3Ccircle cx='1429' cy='226' r='5' fill='%23F26628' stroke='white' stroke-width='2'/%3E%3Crect x='93.5' y='20' width='1' height='313' fill='%23F2F2F2'/%3E%3Ccircle cx='94' cy='163' r='5' fill='%23F26628' stroke='white' stroke-width='2'/%3E%3Crect x='536.5' y='122' width='1' height='313' fill='%23F2F2F2'/%3E%3Ccircle cx='537' cy='265' r='5' fill='%23F26628' stroke='white' stroke-width='2'/%3E%3Crect x='940.5' y='69' width='1' height='313' fill='%23F2F2F2'/%3E%3Ccircle cx='941' cy='212' r='5' fill='%23F26628' stroke='white' stroke-width='2'/%3E%3Crect x='1781.5' width='1' height='313' fill='%23F2F2F2'/%3E%3Ccircle cx='1782' cy='143' r='5' fill='%23F26628' stroke='white' stroke-width='2'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_1818_1376' x1='960' y1='0.240739' x2='960' y2='377' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23F6F6E9'/%3E%3Cstop offset='1' stop-color='white' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+}
+@media (min-width: 960px) {
+  .home__banner {
+    min-height: 847px;
+  }
 }
 .home__block01 {
   background: linear-gradient(180deg, #FFFFFF 0%, #EBE2D7 100%);

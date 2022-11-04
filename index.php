@@ -1,9 +1,101 @@
 <?php $data["title"] = "Homepage"; ?>
 <?php $bodyClass = '' ?>
 <?php require "template-parts/layouts/header.php"; ?>
-<div class="home__block01" uk-height-viewport="offset-top: true">
-    <div class="uk-position-relative">
+<div class="home__block01">
+    <div class="uk-flex uk-flex-middle uk-position-relative home__banner uk-height-min-large uk-background-image@m">
+        <img class="home__banner__imgBottom uk-visible@m uk-position-bottom-center uk-position-small" src="images/Imagepeople.png" alt="">
+        <div class="home__banner__bg uk-position-bottom-center uk-background-image@m"></div>
+        <div class="uk-section uk-width-1-1 uk-position-relative">
+            <div class="uk-container">
+                <div class="uk-grid-169-m" uk-grid>
+                    <div class="uk-width-expand">
+                        <h2 class="home__banner__title uk-h2 home__banner__item-32-15">Fingo – giải pháp tài chính <br class="uk-visible@m">
+                            thế hệ số đã có mặt tại Việt Nam</h2>
+                        <div class="home__banner__desc home__banner__item-32-15"><span>Fingo hỗ trợ</span> xử lý hồ sơ vay vốn tiêu dùng cũng như <br class="uk-visible@m">
+                            làm thẻ tín dụng <span>miễn phí</span> cho khách hàng.</div>
+                        <div class="home__banner__item-32-15">
+                            <a href="" class="home__banner__btn uk-button uk-button-default uk-border-pill">trở thành tư vấn viên</a>
+                        </div>
+                    </div>
+                    <div class="uk-width-2-5@m">
+                        <div class="home__banner__card uk-card uk-card-default uk-card-body uk-height-min-large">
+                            <form class="uk-form-stacked">
+                                <fieldset class="uk-fieldset">
 
+                                    <legend class="uk-legend home__banner__legend">tư vấn miễn phí</legend>
+
+                                    <div class="item__24">
+                                        <label class="uk-form-label home__banner__label" for="form-stacked-text">Họ và tên</label>
+                                        <div class="uk-form-controls">
+                                            <div class="uk-inline uk-width-1-1">
+                                                <span class="uk-form-icon home__banner__icon home__banner__icon--user" uk-icon="icon: user"></span>
+                                                <input class="uk-input home__banner__input" type="text" aria-label="Not clickable icon">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="item__15">
+                                        <label class="uk-form-label home__banner__label" for="form-stacked-text">Ngày tháng năm sinh</label>
+                                        <div class="uk-form-controls">
+                                            <div class="uk-inline uk-width-1-1">
+                                                <span class="uk-form-icon home__banner__icon home__banner__icon--calendar" uk-icon="icon: calendar"></span>
+                                                <input class="uk-input home__banner__input" type="text" aria-label="Not clickable icon">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="item__15">
+                                        <label class="uk-form-label home__banner__label" for="form-stacked-text">Tỉnh thành phố nơi ở hiện tại</label>
+                                        <div class="uk-form-controls">
+                                            <div class="uk-width-1-1" uk-form-custom="target: > * > span:first-child">
+                                                <select aria-label="Custom controls">
+                                                    <option value="">Chọn</option>
+                                                    <option value="1">Option 01</option>
+                                                    <option value="2">Option 02</option>
+                                                    <option value="3">Option 03</option>
+                                                    <option value="4">Option 04</option>
+                                                </select>
+                                                <button class="home__banner__btnSelect uk-width-1-1 uk-button uk-button-default" type="button" tabindex="-1">
+                                                    <span></span>
+                                                    <span class="uk-position-center-right" uk-icon="icon: chevron-down"></span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="item__15 uk-grid-small uk-child-width-auto uk-grid">
+                                        <label class="home__banner__label"><input class="uk-checkbox home__banner__checkBox" type="radio" name="radio2" checked> Nam</label>
+                                        <label class="home__banner__label"><input class="uk-checkbox home__banner__checkBox" type="radio" name="radio2"> Nữ</label>
+                                    </div>
+
+                                    <div class="item__15">
+                                        <label class="uk-form-label home__banner__label" for="form-stacked-text">Số CMND</label>
+                                        <div class="uk-form-controls">
+                                            <input class="uk-input home__banner__input" id="form-stacked-text" type="text" placeholder="">
+                                        </div>
+                                    </div>
+
+                                    <div class="item__15">
+                                        <label class="uk-form-label home__banner__label" for="form-stacked-text">Số điện thoại</label>
+                                        <div class="uk-form-controls">
+                                            <input class="uk-input home__banner__input" id="form-stacked-text" type="text" placeholder="">
+                                        </div>
+                                    </div>
+
+                                    <div class="item__24 uk-text-center">
+                                        <button class="header__bottom__btn uk-button uk-button-default uk-border-pill">Gửi thông tin tư vấn</button>
+                                    </div>
+
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="uk-margin-top uk-hidden@m">
+                            <img class="home__banner__imgBottom" src="images/Imagepeople.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!--Bạn muốn so sánh gì?-->
