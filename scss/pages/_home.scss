@@ -30,6 +30,93 @@
       }
     }
   }
+  &__khachhang{
+    &__card{
+      border-radius: 50px;
+    }
+  }
+  &__baochi{
+    &__slidenav{
+      background-repeat: no-repeat;
+      background-position: center;
+      svg{
+        visibility: hidden;
+      }
+      &--next{
+        background-image: url("data:image/svg+xml,%3Csvg width='20' height='9' viewBox='0 0 20 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19.5 4.5L15.5 0.5V3.5H0.5V5.5H15.5V8.5L19.5 4.5Z' fill='black' fill-opacity='0.54'/%3E%3C/svg%3E%0A");
+      }
+      &--prev{
+        background-image: url("data:image/svg+xml,%3Csvg width='20' height='9' viewBox='0 0 20 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.5 4.5L4.5 0.5V3.5H19.5V5.5H4.5V8.5L0.5 4.5Z' fill='black' fill-opacity='0.54'/%3E%3C/svg%3E%0A");
+      }
+    }
+    &__link1{
+      color: #333333;
+      @extend .fz-16;
+      font-family: $font-BeVietnamPro-Medium;
+      &:hover{
+        color: #{$primary-color};
+      }
+    }
+    &__link{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:before{
+        content: "";
+        width: 51px;
+        height: 29px;
+        display: flex;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        /* Ef */
+
+        backdrop-filter: blur(5px);
+        /* Note: backdrop-filter has minimal browser support */
+
+        border-radius: 20px;
+
+        background-color: red;
+        background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M17.5 12L6.5 19V5L17.5 12ZM13.77 12L8.5 8.64V15.36L13.77 12Z' fill='white' fill-opacity='0.54'/%3E%3C/svg%3E%0A");
+        @include media-breakpoint-up('m'){
+          background-color: rgba(238, 242, 244, 0.7);
+          background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M17.5 12L6.5 19V5L17.5 12ZM13.77 12L8.5 8.64V15.36L13.77 12Z' fill='black' fill-opacity='0.54'/%3E%3C/svg%3E%0A");
+        }
+      }
+      &:hover{
+        &:before{
+          background-color: red;
+          background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M17.5 12L6.5 19V5L17.5 12ZM13.77 12L8.5 8.64V15.36L13.77 12Z' fill='white' fill-opacity='0.54'/%3E%3C/svg%3E%0A");
+        }
+      }
+    }
+    &__desc{
+      color: #333333;
+      @extend .fz-18;
+      line-height: 1.78;
+      font-family: $font-BeVietnamPro-Regular;
+    }
+    $max:40;
+    $min:20;
+    &__item-#{$max}-#{$min}{
+      &:nth-child(n+2){
+        margin-top: #{$min}px;
+        @include media-breakpoint-up('m'){
+          margin-top: #{$max}px;
+        }
+      }
+    }
+    $max:115;
+    $min:60;
+    &__item-#{$max}-#{$min}{
+      &:nth-child(n+2){
+        margin-top: #{$min}px;
+        @include media-breakpoint-up('m'){
+          margin-top: #{$max}px;
+        }
+      }
+    }
+  }
   &__about{
     background: #FAFAFA;
     .uk-width-medium{
@@ -181,6 +268,9 @@
       font-family: $font-BeVietnamPro-ExtraBold;
       line-height: (53/36);
       color: #{$secondary-color};
+      &--c1{
+        @extend .fz-42;
+      }
     }
     &__loadMoreBtn{
       background: linear-gradient(270.5deg, #F79922 -0.62%, #FF6B00 99.14%);

@@ -102,7 +102,8 @@
                                 <div class="uk-padding-remove-right" uk-toggle="cls: uk-padding-small; mode: media; media: @m">
                                     <div class="uk-cover-container uk-height-1-1">
                                         <img src="<?= $v['img'] ?>" alt="" uk-cover="">
-                                        <canvas width="147" height="122"></canvas>
+                                        <canvas class="uk-visible@m" width="147" height="122"></canvas>
+                                        <canvas class="uk-hidden@m" width="350" height="290"></canvas>
                                     </div>
                                 </div>
                             </div>
@@ -149,12 +150,121 @@
 </div>
 <!--/Sản phẩm nổi bật-->
 
-<!--Báo chí nói về chúng tôi-->
+
 <div class="uk-section" uk-height-viewport="expand: true">
     <div class="uk-container">
-        1
+        <!--Báo chí nói về chúng tôi-->
+        <div class="home__baochi__item-115-60">
+            <div class="home__spNoibat__item-48-25">
+                <h2 class="home__spNoibat__title home__spNoibat__title--c1 uk-h2 uk-text-center uk-margin-remove">Báo chí nói về chúng tôi</h2>
+            </div>
+            <div class="home__spNoibat__item-48-25">
+                <div class="home__baochi__item-40-20">
+                    <div class="uk-text-center home__baochi__desc">
+                        Fingo là một nền tảng tài chính công nghệ trẻ, năng động đang nhận <br class="uk-visible@m"> được sự quan tâm của đông đảo khách hàng tại Việt Nam.
+                    </div>
+                </div>
+                <div class="home__baochi__item-40-20">
+                    <div uk-slider="autoplay: true">
+
+                        <div class="uk-position-relative">
+
+                            <div class="uk-slider-container">
+                                <ul class="uk-slider-items uk-grid-match uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+                                    <?php
+                                    $data = array(
+                                        'images/1280px-VTV1_logo_2013_final.png',
+                                        'images/Vietnamnet-Logo.png',
+                                        'images/VnExpress_logo.png',
+                                        'images/nhip-cau-dau-tu.png',
+                                        'images/1280px-VTV1_logo_2013_final.png',
+                                        'images/Vietnamnet-Logo.png',
+                                        'images/VnExpress_logo.png',
+                                        'images/nhip-cau-dau-tu.png',
+                                    );
+                                    foreach ($data as $k=>$v): ?>
+                                    <li>
+                                        <div class="uk-flex uk-flex-column uk-text-center">
+                                            <div class="uk-flex-auto uk-flex uk-flex-middle uk-flex-center">
+                                                <img src="<?= $v ?>" alt="">
+                                            </div>
+                                            <div class="item__24">
+                                                <a href="" class="home__baochi__link1">Xem chi tiết >></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <?php endforeach; ?>
+                                </ul>
+                            </div>
+
+                            <div class="uk-hidden@s uk-light">
+                                <a class="home__baochi__slidenav home__baochi__slidenav--prev uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                                <a class="home__baochi__slidenav home__baochi__slidenav--next uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                            </div>
+
+                            <div class="uk-visible@s">
+                                <a class="home__baochi__slidenav home__baochi__slidenav--prev uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                                <a class="home__baochi__slidenav home__baochi__slidenav--next uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="home__spNoibat__item-48-25">
+                <div class="uk-child-width-1-4@m uk-grid-small uk-grid-20-m uk-grid-match" uk-grid>
+                    <div class="uk-width-1-1 uk-width-1-2@m">
+                        <div class="uk-cover-container">
+                            <img src="images/Rectangle1464.png" alt="" uk-cover="">
+                            <canvas width="590" height="307"></canvas>
+                            <a href="#modal-media-youtube" uk-toggle class="home__baochi__link uk-position-cover"></a>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-2 uk-width-1-4@m">
+                        <div class="uk-cover-container">
+                            <img src="images/Rectangle1465.png" alt="" uk-cover="">
+                            <canvas width="283" height="307"></canvas>
+                            <a href="#modal-media-youtube" uk-toggle class="home__baochi__link uk-position-cover"></a>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-2 uk-width-1-4@m">
+                        <div class="uk-cover-container">
+                            <img src="images/Rectangle1466.png" alt="" uk-cover="">
+                            <canvas width="283" height="307"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="modal-media-youtube" class="uk-flex-top" uk-modal>
+                    <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
+                        <button class="uk-modal-close-outside" type="button" uk-close></button>
+                        <iframe src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA" width="1920" height="1080" uk-video uk-responsive></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/Báo chí nói về chúng tôi-->
+
+        <!--Khách hàng nói gì về Fingo-->
+        <div class="home__baochi__item-115-60">
+            <div class="home__khachhang__card uk-card uk-card-body uk-card-default uk-height-min-large">
+                <div class="uk-child-width-1-2@m" uk-grid>
+                    <div>
+                        <img src="images/section-3-shape-social-girl1.png" alt="">
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/Khách hàng nói gì về Fingo-->
+
+        <div class="home__baochi__item-115-60">
+
+        </div>
     </div>
 </div>
-<!--/Báo chí nói về chúng tôi-->
 
 <?php require "template-parts/layouts/footer.php"; ?>

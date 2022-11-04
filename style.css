@@ -890,156 +890,156 @@ body {
 }
 
 .fz-12, .home__spNoibat__card__btn, .home__spNoibat__card__label {
-  font-size: 9.3333333333px !important;
+  font-size: 9.8823529412px !important;
 }
 @media screen and (min-width: 640px) {
   .fz-12, .home__spNoibat__card__btn, .home__spNoibat__card__label {
-    font-size: calc(9.3333333333px + 0 * ((100vw - 640px) / 560)) !important;
+    font-size: calc(9.8823529412px + 0 * ((100vw - 640px) / 560)) !important;
   }
 }
 @media screen and (min-width: 1200px) {
   .fz-12, .home__spNoibat__card__btn, .home__spNoibat__card__label {
-    font-size: 9.3333333333px !important;
+    font-size: 9.8823529412px !important;
   }
 }
 
 .fz-13, .home__spNoibat__card__txt, .footer__content__copyright {
-  font-size: 10.1111111111px !important;
+  font-size: 10.7058823529px !important;
 }
 @media screen and (min-width: 640px) {
   .fz-13, .home__spNoibat__card__txt, .footer__content__copyright {
-    font-size: calc(10.1111111111px + 0 * ((100vw - 640px) / 560)) !important;
+    font-size: calc(10.7058823529px + 0 * ((100vw - 640px) / 560)) !important;
   }
 }
 @media screen and (min-width: 1200px) {
   .fz-13, .home__spNoibat__card__txt, .footer__content__copyright {
-    font-size: 10.1111111111px !important;
+    font-size: 10.7058823529px !important;
   }
 }
 
 .fz-14, .home__spNoibat__card__star, .footer__content__subnav > li > a {
-  font-size: 10.8888888889px !important;
+  font-size: 11.5294117647px !important;
 }
 @media screen and (min-width: 640px) {
   .fz-14, .home__spNoibat__card__star, .footer__content__subnav > li > a {
-    font-size: calc(10.8888888889px + 0 * ((100vw - 640px) / 560)) !important;
+    font-size: calc(11.5294117647px + 0 * ((100vw - 640px) / 560)) !important;
   }
 }
 @media screen and (min-width: 1200px) {
   .fz-14, .home__spNoibat__card__star, .footer__content__subnav > li > a {
-    font-size: 10.8888888889px !important;
+    font-size: 11.5294117647px !important;
   }
 }
 
 .fz-15, .home__spNoibat__loadMoreBtn, .footer__content__boxForm__input {
-  font-size: 11.6666666667px !important;
+  font-size: 12.3529411765px !important;
 }
 @media screen and (min-width: 640px) {
   .fz-15, .home__spNoibat__loadMoreBtn, .footer__content__boxForm__input {
-    font-size: calc(11.6666666667px + 0 * ((100vw - 640px) / 560)) !important;
+    font-size: calc(12.3529411765px + 0 * ((100vw - 640px) / 560)) !important;
   }
 }
 @media screen and (min-width: 1200px) {
   .fz-15, .home__spNoibat__loadMoreBtn, .footer__content__boxForm__input {
-    font-size: 11.6666666667px !important;
+    font-size: 12.3529411765px !important;
   }
 }
 
-.fz-16, .header__bottom__btn, .header__top__langSwitch__txt {
-  font-size: 12.4444444444px !important;
+.fz-16, .home__baochi__link1, .header__bottom__btn, .header__top__langSwitch__txt {
+  font-size: 13.1764705882px !important;
 }
 @media screen and (min-width: 640px) {
-  .fz-16, .header__bottom__btn, .header__top__langSwitch__txt {
-    font-size: calc(12.4444444444px + 0 * ((100vw - 640px) / 560)) !important;
+  .fz-16, .home__baochi__link1, .header__bottom__btn, .header__top__langSwitch__txt {
+    font-size: calc(13.1764705882px + 0 * ((100vw - 640px) / 560)) !important;
   }
 }
 @media screen and (min-width: 1200px) {
-  .fz-16, .header__bottom__btn, .header__top__langSwitch__txt {
-    font-size: 12.4444444444px !important;
+  .fz-16, .home__baochi__link1, .header__bottom__btn, .header__top__langSwitch__txt {
+    font-size: 13.1764705882px !important;
   }
 }
 
-.fz-18, .home__spNoibat__boxTabs .uk-subnav > li > a, .home__spNoibat__card__star b, .home__spNoibat__card__title, .home__about__link, .home__about__desc, .footer__content__desc, .footer__content__listAddress > li, .footer__content__nav > li > a, .header__bottom .uk-navbar-nav > li > a, .header__bottom__formSearch__input, .header__top .uk-navbar-nav > li > a {
-  font-size: 14px !important;
+.fz-18, .home__spNoibat__boxTabs .uk-subnav > li > a, .home__spNoibat__card__star b, .home__spNoibat__card__title, .home__about__link, .home__about__desc, .home__baochi__desc, .footer__content__desc, .footer__content__listAddress > li, .footer__content__nav > li > a, .header__bottom .uk-navbar-nav > li > a, .header__bottom__formSearch__input, .header__top .uk-navbar-nav > li > a {
+  font-size: 14.8235294118px !important;
 }
 @media screen and (min-width: 640px) {
-  .fz-18, .home__spNoibat__boxTabs .uk-subnav > li > a, .home__spNoibat__card__star b, .home__spNoibat__card__title, .home__about__link, .home__about__desc, .footer__content__desc, .footer__content__listAddress > li, .footer__content__nav > li > a, .header__bottom .uk-navbar-nav > li > a, .header__bottom__formSearch__input, .header__top .uk-navbar-nav > li > a {
-    font-size: calc(14px + 0 * ((100vw - 640px) / 560)) !important;
+  .fz-18, .home__spNoibat__boxTabs .uk-subnav > li > a, .home__spNoibat__card__star b, .home__spNoibat__card__title, .home__about__link, .home__about__desc, .home__baochi__desc, .footer__content__desc, .footer__content__listAddress > li, .footer__content__nav > li > a, .header__bottom .uk-navbar-nav > li > a, .header__bottom__formSearch__input, .header__top .uk-navbar-nav > li > a {
+    font-size: calc(14.8235294118px + 0 * ((100vw - 640px) / 560)) !important;
   }
 }
 @media screen and (min-width: 1200px) {
-  .fz-18, .home__spNoibat__boxTabs .uk-subnav > li > a, .home__spNoibat__card__star b, .home__spNoibat__card__title, .home__about__link, .home__about__desc, .footer__content__desc, .footer__content__listAddress > li, .footer__content__nav > li > a, .header__bottom .uk-navbar-nav > li > a, .header__bottom__formSearch__input, .header__top .uk-navbar-nav > li > a {
-    font-size: 14px !important;
+  .fz-18, .home__spNoibat__boxTabs .uk-subnav > li > a, .home__spNoibat__card__star b, .home__spNoibat__card__title, .home__about__link, .home__about__desc, .home__baochi__desc, .footer__content__desc, .footer__content__listAddress > li, .footer__content__nav > li > a, .header__bottom .uk-navbar-nav > li > a, .header__bottom__formSearch__input, .header__top .uk-navbar-nav > li > a {
+    font-size: 14.8235294118px !important;
   }
 }
 
 .fz-20, .home__about__box, .header__top .uk-search-input {
-  font-size: 15.5555555556px !important;
+  font-size: 14.8235294118px !important;
 }
 @media screen and (min-width: 640px) {
   .fz-20, .home__about__box, .header__top .uk-search-input {
-    font-size: calc(15.5555555556px + 0 * ((100vw - 640px) / 560)) !important;
+    font-size: calc(14.8235294118px + 1.6470588235 * ((100vw - 640px) / 560)) !important;
   }
 }
 @media screen and (min-width: 1200px) {
   .fz-20, .home__about__box, .header__top .uk-search-input {
-    font-size: 15.5555555556px !important;
+    font-size: 16.4705882353px !important;
   }
 }
 
 .fz-24, .home__about__txt2, .home__about__column:nth-child(n+2) .home__about__box:before, .home__about__txt1, .footer__content__title, .footer__content__boxForm__title {
-  font-size: 14.9333333333px !important;
+  font-size: 15.8117647059px !important;
 }
 @media screen and (min-width: 640px) {
   .fz-24, .home__about__txt2, .home__about__column:nth-child(n+2) .home__about__box:before, .home__about__txt1, .footer__content__title, .footer__content__boxForm__title {
-    font-size: calc(14.9333333333px + 3.7333333333 * ((100vw - 640px) / 560)) !important;
+    font-size: calc(15.8117647059px + 3.9529411765 * ((100vw - 640px) / 560)) !important;
   }
 }
 @media screen and (min-width: 1200px) {
   .fz-24, .home__about__txt2, .home__about__column:nth-child(n+2) .home__about__box:before, .home__about__txt1, .footer__content__title, .footer__content__boxForm__title {
-    font-size: 18.6666666667px !important;
+    font-size: 19.7647058824px !important;
   }
 }
 
 .fz-30 {
-  font-size: 18.6666666667px !important;
+  font-size: 19.7647058824px !important;
 }
 @media screen and (min-width: 640px) {
   .fz-30 {
-    font-size: calc(18.6666666667px + 4.6666666667 * ((100vw - 640px) / 560)) !important;
+    font-size: calc(19.7647058824px + 4.9411764706 * ((100vw - 640px) / 560)) !important;
   }
 }
 @media screen and (min-width: 1200px) {
   .fz-30 {
-    font-size: 23.3333333333px !important;
+    font-size: 24.7058823529px !important;
   }
 }
 
 .fz-36, .home__spNoibat__title {
-  font-size: 22.4px !important;
+  font-size: 20.7529411765px !important;
 }
 @media screen and (min-width: 640px) {
   .fz-36, .home__spNoibat__title {
-    font-size: calc(22.4px + 5.6 * ((100vw - 640px) / 560)) !important;
+    font-size: calc(20.7529411765px + 8.8941176471 * ((100vw - 640px) / 560)) !important;
   }
 }
 @media screen and (min-width: 1200px) {
   .fz-36, .home__spNoibat__title {
-    font-size: 28px !important;
+    font-size: 29.6470588235px !important;
   }
 }
 
-.fz-42 {
-  font-size: 22.8666666667px !important;
+.fz-42, .home__spNoibat__title--c1 {
+  font-size: 24.2117647059px !important;
 }
 @media screen and (min-width: 640px) {
-  .fz-42 {
-    font-size: calc(22.8666666667px + 9.8 * ((100vw - 640px) / 560)) !important;
+  .fz-42, .home__spNoibat__title--c1 {
+    font-size: calc(24.2117647059px + 10.3764705882 * ((100vw - 640px) / 560)) !important;
   }
 }
 @media screen and (min-width: 1200px) {
-  .fz-42 {
-    font-size: 32.6666666667px !important;
+  .fz-42, .home__spNoibat__title--c1 {
+    font-size: 34.5882352941px !important;
   }
 }
 
@@ -1078,6 +1078,9 @@ body {
   overflow: hidden;
 }
 
+.item__24:nth-child(n+2) {
+  margin-top: 24px;
+}
 .item__15:nth-child(n+2) {
   margin-top: 15px;
 }
@@ -1536,6 +1539,80 @@ body {
 }
 .home__overflow__column:last-child {
   padding-right: 15px;
+}
+.home__khachhang__card {
+  border-radius: 50px;
+}
+.home__baochi__slidenav {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.home__baochi__slidenav svg {
+  visibility: hidden;
+}
+.home__baochi__slidenav--next {
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='9' viewBox='0 0 20 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19.5 4.5L15.5 0.5V3.5H0.5V5.5H15.5V8.5L19.5 4.5Z' fill='black' fill-opacity='0.54'/%3E%3C/svg%3E%0A");
+}
+.home__baochi__slidenav--prev {
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='9' viewBox='0 0 20 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.5 4.5L4.5 0.5V3.5H19.5V5.5H4.5V8.5L0.5 4.5Z' fill='black' fill-opacity='0.54'/%3E%3C/svg%3E%0A");
+}
+.home__baochi__link1 {
+  color: #333333;
+  font-family: "Be Vietnam Pro Medium", sans-serif;
+}
+.home__baochi__link1:hover {
+  color: #F5821F;
+}
+.home__baochi__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home__baochi__link:before {
+  content: "";
+  width: 51px;
+  height: 29px;
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  /* Ef */
+  backdrop-filter: blur(5px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 20px;
+  background-color: red;
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M17.5 12L6.5 19V5L17.5 12ZM13.77 12L8.5 8.64V15.36L13.77 12Z' fill='white' fill-opacity='0.54'/%3E%3C/svg%3E%0A");
+}
+@media (min-width: 960px) {
+  .home__baochi__link:before {
+    background-color: rgba(238, 242, 244, 0.7);
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M17.5 12L6.5 19V5L17.5 12ZM13.77 12L8.5 8.64V15.36L13.77 12Z' fill='black' fill-opacity='0.54'/%3E%3C/svg%3E%0A");
+  }
+}
+.home__baochi__link:hover:before {
+  background-color: red;
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M17.5 12L6.5 19V5L17.5 12ZM13.77 12L8.5 8.64V15.36L13.77 12Z' fill='white' fill-opacity='0.54'/%3E%3C/svg%3E%0A");
+}
+.home__baochi__desc {
+  color: #333333;
+  line-height: 1.78;
+  font-family: "Be Vietnam Pro Regular", sans-serif;
+}
+.home__baochi__item-40-20:nth-child(n+2) {
+  margin-top: 20px;
+}
+@media (min-width: 960px) {
+  .home__baochi__item-40-20:nth-child(n+2) {
+    margin-top: 40px;
+  }
+}
+.home__baochi__item-115-60:nth-child(n+2) {
+  margin-top: 60px;
+}
+@media (min-width: 960px) {
+  .home__baochi__item-115-60:nth-child(n+2) {
+    margin-top: 115px;
+  }
 }
 .home__about {
   background: #FAFAFA;
