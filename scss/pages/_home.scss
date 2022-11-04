@@ -31,8 +31,104 @@
     }
   }
   &__khachhang{
+
     &__card{
       border-radius: 50px;
+      &:before{
+
+      }
+      &:after{
+
+      }
+    }
+    &__box{
+      &:before{
+
+      }
+      &:after{
+
+      }
+    }
+    &__desc{
+      color: #90A3B4;
+      @extend .fz-16;
+      line-height: 2;
+      font-family: $font-BeVietnamPro-Italic;
+    }
+    &__name{
+      letter-spacing: 0.2px;
+
+      /* gradient */
+
+      background: linear-gradient(270.5deg, #F79922 -0.62%, #FF6B00 99.14%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      @extend .fz-20;
+      font-family: $font-BeVietnamPro-Bold;
+      line-height: 1.2;
+    }
+    &__txt{
+      color: #90A3B4;
+      line-height: 1.75;
+      @extend .fz-16;
+      font-family: $font-BeVietnamPro-Regular;
+    }
+    &__dotnav{
+      margin-left: -8px;
+      >*{
+        padding-left: 8px;
+        >*{
+          background: #E0E0E0;
+          border-color: #E0E0E0;
+        }
+        &.uk-active{
+          >*{
+            background: #{$primary-color};
+            border-color: #{$primary-color};
+          }
+        }
+      }
+    }
+    &__slidenav{
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-left: 5px;
+      margin-right: 5px;
+      svg{
+        visibility: hidden;
+      }
+      &--next{
+        background-image: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 13L7 7L1 1' stroke='%23038C4B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+      }
+      &--prev{
+        background-image: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 13L1 7L7 1' stroke='url(%23paint0_linear_1175_3622)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_1175_3622' x1='4' y1='1' x2='4' y2='13' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%2342A268'/%3E%3Cstop offset='1' stop-color='%23026633'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+      }
+    }
+    &__star{
+      width: 18px;
+      height: 18px;
+      display: inline-flex;
+      background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.09375 1.5625L6.0625 5.71875L1.46875 6.375C0.65625 6.5 0.34375 7.5 0.9375 8.09375L4.21875 11.3125L3.4375 15.8438C3.3125 16.6562 4.1875 17.2812 4.90625 16.9062L9 14.75L13.0625 16.9062C13.7812 17.2812 14.6562 16.6562 14.5312 15.8438L13.75 11.3125L17.0312 8.09375C17.625 7.5 17.3125 6.5 16.5 6.375L11.9375 5.71875L9.875 1.5625C9.53125 0.84375 8.46875 0.8125 8.09375 1.5625Z' fill='%23FAAD13'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &__box1{
+      padding-left: 82px;
+      background-image: url("data:image/svg+xml,%3Csvg width='49' height='33' viewBox='0 0 49 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.548 12C12.6247 12 14.6548 12.6158 16.3815 13.7696C18.1082 14.9233 19.454 16.5632 20.2487 18.4818C21.0435 20.4005 21.2514 22.5117 20.8462 24.5485C20.4411 26.5853 19.4411 28.4562 17.9726 29.9246C16.5042 31.3931 14.6332 32.3931 12.5964 32.7982C10.5596 33.2034 8.44845 32.9955 6.52982 32.2007C4.6112 31.406 2.97132 30.0602 1.81757 28.3335C0.663814 26.6068 0.048 24.5767 0.048 22.5L0 21C0 15.4305 2.21249 10.089 6.15076 6.15076C10.089 2.21249 15.4305 0 21 0V6C19.0293 5.9947 17.0771 6.38013 15.2563 7.134C13.4355 7.88786 11.7822 8.99521 10.392 10.392C9.85168 10.9313 9.35324 11.511 8.901 12.126C9.438 12.042 9.987 11.997 10.545 11.997L10.548 12ZM37.548 12C39.6247 12 41.6548 12.6158 43.3815 13.7696C45.1082 14.9233 46.454 16.5632 47.2487 18.4818C48.0435 20.4005 48.2514 22.5117 47.8462 24.5485C47.4411 26.5853 46.4411 28.4562 44.9726 29.9246C43.5042 31.3931 41.6333 32.3931 39.5965 32.7982C37.5597 33.2034 35.4484 32.9955 33.5298 32.2007C31.6112 31.406 29.9713 30.0602 28.8176 28.3335C27.6638 26.6068 27.048 24.5767 27.048 22.5L27 21C27 15.4305 29.2125 10.089 33.1508 6.15076C37.089 2.21249 42.4305 0 48 0V6C46.0293 5.9947 44.0771 6.38013 42.2563 7.134C40.4355 7.88786 38.7822 8.99521 37.392 10.392C36.8517 10.9313 36.3532 11.511 35.901 12.126C36.438 12.042 36.987 11.997 37.548 11.997V12Z' fill='url(%23paint0_linear_1175_3623)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_1175_3623' x1='24.024' y1='0' x2='24.024' y2='33' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23F8A140'/%3E%3Cstop offset='1' stop-color='%23B94D00'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      background-position: top left;
+    }
+    $max:36;
+    $min:20;
+    &__item-#{$max}-#{$min}{
+      &:nth-child(n+2){
+        margin-top: #{$min}px;
+        @include media-breakpoint-up('m'){
+          margin-top: #{$max}px;
+        }
+      }
     }
   }
   &__baochi{
@@ -270,6 +366,9 @@
       color: #{$secondary-color};
       &--c1{
         @extend .fz-42;
+      }
+      &--c2{
+        font-family: $font-BeVietnamPro-SemiBold;
       }
     }
     &__loadMoreBtn{

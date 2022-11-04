@@ -248,13 +248,70 @@
 
         <!--Khách hàng nói gì về Fingo-->
         <div class="home__baochi__item-115-60">
-            <div class="home__khachhang__card uk-card uk-card-body uk-card-default uk-height-min-large">
-                <div class="uk-child-width-1-2@m" uk-grid>
-                    <div>
-                        <img src="images/section-3-shape-social-girl1.png" alt="">
-                    </div>
-                    <div>
+            <div class="home__khachhang__card uk-position-relative uk-card uk-card-body uk-card-default">
+                <div class="home__khachhang__box uk-position-cover"></div>
+                <div class="uk-position-relative">
+                    <div class="uk-child-width-1-2@m uk-flex-middle" uk-grid>
+                        <div class="uk-visible@m">
+                            <img src="images/section-3-shape-social-girl1.png" alt="">
+                        </div>
+                        <div>
+                            <div class="home__khachhang__item-36-20">
+                                <h2 class="home__spNoibat__title home__spNoibat__title--c2 uk-h2 uk-margin-remove">Khách hàng nói gì về Fingo</h2>
+                            </div>
+                            <div class="home__khachhang__item-36-20">
+                                <div class="home__khachhang__box1 uk-height-min-small">
+                                    <div uk-slider="autoplay: true">
 
+                                        <div class="uk-position-relative">
+
+                                            <div class="uk-slider-container">
+                                                <ul class="uk-slider-items uk-child-width-1-1">
+                                                    <?php for ($i=0;$i<=4;$i++): ?>
+                                                    <li>
+                                                        <div>
+                                                            <span class="home__khachhang__star"></span>
+                                                            <span class="home__khachhang__star"></span>
+                                                            <span class="home__khachhang__star"></span>
+                                                            <span class="home__khachhang__star"></span>
+                                                            <span class="home__khachhang__star"></span>
+                                                        </div>
+                                                        <div class="item__14 home__khachhang__desc">Nhân viên tư vấn rất nhiệt tình, chọn đúng ngân hàng phù hợp, vay được hạn mức cao và lãi suất ưu đãi, không phải mất phí ngoài, đặc biệt nhân viên chăm sóc cũng rất nhiệt tình hỗ trợ tốt.</div>
+                                                        <div class="item__19 uk-grid-small uk-flex-middle" uk-grid>
+                                                            <div class="uk-width-auto">
+                                                                <div class="uk-cover-container uk-border-circle">
+                                                                    <img src="images/K/Photo.png" alt="" uk-cover="">
+                                                                    <canvas width="56" height="56"></canvas>
+                                                                </div>
+                                                            </div>
+                                                            <div class="uk-width-expand">
+                                                                <div class="home__khachhang__name">Mr. Quang</div>
+                                                                <div class="item__4 home__khachhang__txt">Nhân viên văn phòng</div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <?php endfor; ?>
+                                                </ul>
+                                            </div>
+
+                                            <div class="uk-hidden@s uk-light">
+                                                <a class="home__khachhang__slidenav home__khachhang__slidenav--prev uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                                                <a class="home__khachhang__slidenav home__khachhang__slidenav--next uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                                            </div>
+
+                                            <div class="uk-visible@s">
+                                                <a class="home__khachhang__slidenav home__khachhang__slidenav--prev uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                                                <a class="home__khachhang__slidenav home__khachhang__slidenav--next uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                                            </div>
+
+                                        </div>
+
+                                        <ul class="uk-slider-nav home__khachhang__dotnav uk-dotnav uk-margin"></ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
