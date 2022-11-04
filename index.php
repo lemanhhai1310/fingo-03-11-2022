@@ -1,8 +1,81 @@
 <?php $data["title"] = "Homepage"; ?>
 <?php $bodyClass = '' ?>
 <?php require "template-parts/layouts/header.php"; ?>
-<div class="uk-height-viewport">
+<div class="home__block01" uk-height-viewport="offset-top: true">
+    <div class="uk-position-relative">
 
+    </div>
+
+    <!--Bạn muốn so sánh gì?-->
+    <div class="uk-section">
+        <div class="uk-container">
+            <div class="home__block01__item-79-30">
+                <h2 class="home__spNoibat__title uk-h2 uk-text-center uk-margin-remove">Bạn muốn so sánh gì?</h2>
+            </div>
+            <div class="home__block01__item-79-30">
+                <div class="uk-child-width-1-2 uk-grid-match uk-child-width-1-5@m uk-grid-small uk-grid-20-m" uk-grid>
+                    <?php
+                    $data = array(
+                        array(
+                            'img' => 'images/4761-collecting-money.gif',
+                            'txt' => 'Vay tiền mặt >>',
+                        ),
+                        array(
+                            'img' => 'images/38836-money.gif',
+                            'txt' => 'Vay tín chấp >>',
+                        ),
+                        array(
+                            'img' => 'images/38313-money.gif',
+                            'txt' => 'Vay thế chấp >>',
+                        ),
+                        array(
+                            'img' => 'images/86328-transfer-money.gif',
+                            'txt' => 'Vay mua nhà >>',
+                        ),
+                        array(
+                            'img' => 'images/58173-money-for-car.gif',
+                            'txt' => 'Vay mua xe ô tô >>',
+                        ),
+                        array(
+                            'img' => 'images/89738-credit-card.gif',
+                            'txt' => 'Thẻ tín dụng >>',
+                        ),
+                        array(
+                            'img' => 'images/9888-money-money-money.gif',
+                            'txt' => 'Vay tiền nhanh >>',
+                        ),
+                        array(
+                            'img' => 'images/38575-make-money-online.gif',
+                            'txt' => 'Vay tiền online >>',
+                        ),
+                        array(
+                            'img' => 'images/97611-smartphone-money-green.gif',
+                            'txt' => 'Vay tiền trả góp >>',
+                        ),
+                        array(
+                            'img' => 'images/69192-money.gif',
+                            'txt' => 'Vay tiêu dùng >>',
+                        ),
+                    );
+                    foreach ($data as $k=>$v): ?>
+                    <div>
+                        <div class="home__block01__card uk-position-relative uk-text-center uk-card uk-card-body uk-card-default uk-height-min-small">
+                            <div class="uk-cover-container">
+                                <img src="<?= $v['img'] ?>" alt="" uk-cover="">
+                                <canvas width="209" height="190"></canvas>
+                            </div>
+                            <div class="item__6 home__block01__card__txt">
+                                <?= $v['txt'] ?>
+                            </div>
+                            <a href="" class="uk-position-cover"></a>
+                        </div>
+                    </div>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/Bạn muốn so sánh gì?-->
 </div>
 <!--Về chúng tôi-->
 <div class="uk-section home__about">

@@ -30,6 +30,35 @@
       }
     }
   }
+  &__block01{
+    background: linear-gradient(180deg, #FFFFFF 0%, #EBE2D7 100%);
+    mix-blend-mode: multiply;
+
+    &__card{
+      padding: 15px;
+      border-radius: 20px;
+      @include media-breakpoint-up('m'){
+        border-radius: 50px;
+        padding: 20px;
+      }
+      &__txt{
+        color: #333333;
+        @extend .fz-18;
+        font-family: $font-BeVietnamPro-Bold;
+        line-height: 1.33;
+      }
+    }
+    $max:79;
+    $min:30;
+    &__item-#{$max}-#{$min}{
+      &:nth-child(n+2){
+        margin-top: #{$min}px;
+        @include media-breakpoint-up('m'){
+          margin-top: #{$max}px;
+        }
+      }
+    }
+  }
   &__blog{
     &__card{
       border-radius: 20px 20px 0px 0px;

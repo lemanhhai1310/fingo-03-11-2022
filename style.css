@@ -1024,16 +1024,16 @@ body {
   }
 }
 
-.fz-18, .home__spNoibat__boxTabs .uk-subnav > li > a, .home__spNoibat__card__star b, .home__spNoibat__card__title, .home__about__link, .home__about__desc, .home__baochi__desc, .home__blog__card__desc, .footer__content__desc, .footer__content__listAddress > li, .footer__content__nav > li > a, .header__bottom .uk-navbar-nav > li > a, .header__bottom__formSearch__input, .header__top .uk-navbar-nav > li > a {
+.fz-18, .home__spNoibat__boxTabs .uk-subnav > li > a, .home__spNoibat__card__star b, .home__spNoibat__card__title, .home__about__link, .home__about__desc, .home__baochi__desc, .home__blog__card__desc, .home__block01__card__txt, .footer__content__desc, .footer__content__listAddress > li, .footer__content__nav > li > a, .header__bottom .uk-navbar-nav > li > a, .header__bottom__formSearch__input, .header__top .uk-navbar-nav > li > a {
   font-size: 14.8235294118px !important;
 }
 @media screen and (min-width: 640px) {
-  .fz-18, .home__spNoibat__boxTabs .uk-subnav > li > a, .home__spNoibat__card__star b, .home__spNoibat__card__title, .home__about__link, .home__about__desc, .home__baochi__desc, .home__blog__card__desc, .footer__content__desc, .footer__content__listAddress > li, .footer__content__nav > li > a, .header__bottom .uk-navbar-nav > li > a, .header__bottom__formSearch__input, .header__top .uk-navbar-nav > li > a {
+  .fz-18, .home__spNoibat__boxTabs .uk-subnav > li > a, .home__spNoibat__card__star b, .home__spNoibat__card__title, .home__about__link, .home__about__desc, .home__baochi__desc, .home__blog__card__desc, .home__block01__card__txt, .footer__content__desc, .footer__content__listAddress > li, .footer__content__nav > li > a, .header__bottom .uk-navbar-nav > li > a, .header__bottom__formSearch__input, .header__top .uk-navbar-nav > li > a {
     font-size: calc(14.8235294118px + 0 * ((100vw - 640px) / 560)) !important;
   }
 }
 @media screen and (min-width: 1200px) {
-  .fz-18, .home__spNoibat__boxTabs .uk-subnav > li > a, .home__spNoibat__card__star b, .home__spNoibat__card__title, .home__about__link, .home__about__desc, .home__baochi__desc, .home__blog__card__desc, .footer__content__desc, .footer__content__listAddress > li, .footer__content__nav > li > a, .header__bottom .uk-navbar-nav > li > a, .header__bottom__formSearch__input, .header__top .uk-navbar-nav > li > a {
+  .fz-18, .home__spNoibat__boxTabs .uk-subnav > li > a, .home__spNoibat__card__star b, .home__spNoibat__card__title, .home__about__link, .home__about__desc, .home__baochi__desc, .home__blog__card__desc, .home__block01__card__txt, .footer__content__desc, .footer__content__listAddress > li, .footer__content__nav > li > a, .header__bottom .uk-navbar-nav > li > a, .header__bottom__formSearch__input, .header__top .uk-navbar-nav > li > a {
     font-size: 14.8235294118px !important;
   }
 }
@@ -1163,6 +1163,9 @@ body {
 }
 .item__8:nth-child(n+2) {
   margin-top: 8px;
+}
+.item__6:nth-child(n+2) {
+  margin-top: 6px;
 }
 .item__4:nth-child(n+2) {
   margin-top: 4px;
@@ -1616,6 +1619,33 @@ body {
 }
 .home__overflow__column:last-child {
   padding-right: 15px;
+}
+.home__block01 {
+  background: linear-gradient(180deg, #FFFFFF 0%, #EBE2D7 100%);
+  mix-blend-mode: multiply;
+}
+.home__block01__card {
+  padding: 15px;
+  border-radius: 20px;
+}
+@media (min-width: 960px) {
+  .home__block01__card {
+    border-radius: 50px;
+    padding: 20px;
+  }
+}
+.home__block01__card__txt {
+  color: #333333;
+  font-family: "Be Vietnam Pro Bold", sans-serif;
+  line-height: 1.33;
+}
+.home__block01__item-79-30:nth-child(n+2) {
+  margin-top: 30px;
+}
+@media (min-width: 960px) {
+  .home__block01__item-79-30:nth-child(n+2) {
+    margin-top: 79px;
+  }
 }
 .home__blog__card {
   border-radius: 20px 20px 0px 0px;
