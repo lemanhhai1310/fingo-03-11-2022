@@ -1,8 +1,8 @@
 body{
   font-family: $font-BeVietnamPro-Regular;
-  background: #{$primary-color};
+  //background: #{$primary-color};
   @include media-breakpoint-up('m'){
-    background: #FAFAFA;
+    background: #F5F5F5;
   }
   &.blog{
     @include media-breakpoint-up('m'){
@@ -11,12 +11,12 @@ body{
   }
   &.blog-detail{
     @include media-breakpoint-up('m'){
-      //background-color: #FFFFFF;
+      background-color: #FFFFFF;
     }
   }
 }
 #app{
   @include media-breakpoint-down('s'){
-    background: #FAFAFA;
+    //background: #FFFFFF;
   }
 }

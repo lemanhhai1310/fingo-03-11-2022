@@ -1,0 +1,33 @@
+.about{
+  &__section1{
+    &__coverImg{
+      background: linear-gradient(0deg, rgba(2, 16, 9, 0.45), rgba(2, 16, 9, 0.45)), url(images/Images/Team.png);
+      border-radius: 20px;
+      background-repeat: no-repeat;
+      &__title{
+        font-family: $font-BeVietnamPro-SemiBold;
+      }
+      &__desc{
+        @extend .fz-24;
+        font-family: $font-BeVietnamPro-Medium;
+        line-height: 1.33;
+      }
+    }
+    $max:24;
+    $min:10;
+    &__item-#{$max}-#{$min}{
+      &:nth-child(n+2){
+        margin-top: #{$min}px;
+        @include media-breakpoint-up('m'){
+          margin-top: #{$max}px;
+        }
+      }
+    }
+  }
+  &__section2{
+
+  }
+  &__section3{
+
+  }
+}
