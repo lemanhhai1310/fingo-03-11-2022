@@ -1,4 +1,17 @@
 .blog{
+  &__article{
+    .uk-article-title{
+      color: #333333;
+      @extend .fz-36;
+      font-family: $font-BeVietnamPro-Bold;
+      line-height: (53/36);
+    }
+    p{
+      letter-spacing: -0.0033em;
+      @extend .fz-18;
+      line-height: 1.78;
+    }
+  }
   &__content{
     padding-top: 0;
     @include media-breakpoint-up('m'){
@@ -9,10 +22,48 @@
         border-radius: 20px;
       }
     }
+    &__btnShare{
+      text-transform: inherit;
+      display: flex;
+      align-items: center;
+      svg{
+        margin-left: 5px;
+      }
+    }
+  }
+  &__mucluc{
+    .uk-nav{
+      >li{
+        &:last-child{
+          >a{
+            color: #FE6601;
+            font-family: $font-BeVietnamPro-Bold;
+          }
+        }
+        >a{
+          padding: 10px 25px;
+          color: #333333;
+          letter-spacing: 0.0275em;
+          @extend .fz-16;
+          line-height: 1.5;
+          &:hover{
+            background: #FFF2EA;
+            color: #{$primary-color};
+          }
+        }
+        &.uk-active{
+          >a{
+            background: #FFF2EA;
+            color: #{$primary-color};
+          }
+        }
+      }
+    }
   }
   &__boxBreadcrumb{
     padding-top: 10px;
     padding-bottom: 10px;
+    background: #F5F5F5;
     &.uk-sticky-below{
       //box-shadow: 0 5px 15px rgba(0,0,0,0.08);
     }
@@ -205,7 +256,7 @@
     &__aside{
       &__card{
         @include media-breakpoint-up('m'){
-          border-radius: 20px;
+
         }
         &__title{
           color: #{$secondary-color};

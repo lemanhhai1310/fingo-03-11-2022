@@ -1,4 +1,4 @@
-<div class="blog__blockContent__aside__card uk-border-rounded uk-card uk-card-body uk-padding-small uk-card-default uk-height-min-medium">
+<div class="blog__blockContent__aside__card uk-card uk-card-body uk-padding-small uk-card-default uk-height-min-medium">
     <h4 class="uk-h4 uk-text-center blog__blockContent__aside__card__title">Bài viết đọc nhiều</h4>
     <ul class="uk-nav uk-nav-divider blog__blockContent__aside__navList">
         <?php

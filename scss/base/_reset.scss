@@ -2,21 +2,21 @@ body{
   font-family: $font-BeVietnamPro-Regular;
   background: #{$primary-color};
   @include media-breakpoint-up('m'){
-    background-color: #f8f8f8;
+    background: #FAFAFA;
   }
   &.blog{
     @include media-breakpoint-up('m'){
-      background-color: #f5f5f5;
+      //background-color: #f5f5f5;
     }
   }
   &.blog-detail{
     @include media-breakpoint-up('m'){
-      background-color: #FFFFFF;
+      //background-color: #FFFFFF;
     }
   }
 }
 #app{
   @include media-breakpoint-down('s'){
-    background: #FFFFFF;
+    background: #FAFAFA;
   }
 }
