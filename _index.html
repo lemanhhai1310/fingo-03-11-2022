@@ -8,17 +8,43 @@
     <!--CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.11/dist/css/uikit.min.css" />
-    <link rel="stylesheet" href="style.css?v=1667568348">
+    <link rel="stylesheet" href="style.css?v=1667662892">
 
     <!--JS-->
     <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.11/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.11/dist/js/uikit-icons.min.js"></script>
-    <script src="js/app.js?v=1667568348"></script>
+    <script src="js/app.js?v=1667662892"></script>
 </head>
 <body class="">
-<!--app-->
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+     attribution=setup_tool
+     page_id="2428809380682169"
+     logged_in_greeting="Bạn cần cắt HTML/CSS? Hãy chat ngay với chúng tôi"
+     logged_out_greeting="Bạn cần cắt HTML/CSS? Hãy chat ngay với chúng tôi">
+</div>
+<script>
+    defer(function() {
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml            : true,
+                version          : 'v5.0'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    }, 5000);
+</script><!--app-->
 <div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
 
     <!--header-->
@@ -81,20 +107,20 @@
             <div class="uk-container uk-container-expand">
                 <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
                     <div class="uk-navbar-left">
-                        <a href="" class="uk-navbar-item uk-logo uk-visible@m"><img src="images/logo_fingo_h.png" alt=""></a>
+                        <a href="." class="uk-navbar-item uk-logo uk-visible@m"><img src="images/logo_fingo_h.png" alt=""></a>
                         <a class="header__bottom__menuBtn uk-navbar-toggle uk-hidden@m uk-light" href="#">
                             <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
                         </a>
                     </div>
                     <div class="uk-navbar-center">
-                        <a href="" class="uk-navbar-item uk-logo uk-hidden@m"><img src="images/Logo_white.png" alt=""></a>
+                        <a href="." class="uk-navbar-item uk-logo uk-hidden@m"><img src="images/Logo_white.png" alt=""></a>
                         <ul class="uk-navbar-nav uk-visible@m">
-                            <li class="uk-active"><a href="#">trang chủ</a></li>
+                            <li class="uk-active"><a href=".">trang chủ</a></li>
                             <li><a href="#">đăng ký vay tiền</a></li>
                             <li><a href="#">MỞ THẺ TÍN DỤNG</a></li>
                             <li><a href="#">ĐĂNG KÝ ĐẠI LÝ</a></li>
                             <li><a href="#">tuyển dụng</a></li>
-                            <li><a href="#">tin tức</a></li>
+                            <li><a href="blog.php">tin tức</a></li>
                             <li><a href="#">banker đăng nhập</a></li>
                         </ul>
                     </div>
@@ -1018,22 +1044,22 @@
             <!--Tin tức mới-->
             <div class="home__baochi__item-115-60">
                 <div class="home__blog__item-75-30">
-                    <div class="uk-grid-small uk-grid-50-m" uk-grid>
-                        <div class="uk-width-1-4@m">
+                    <div class="uk-grid-small uk-grid-50-m" uk-scrollspy="target: .animation; cls: uk-animation-slide-left-small; delay: 300" uk-grid>
+                        <div class="uk-width-1-4@m animation">
                             <h2 class="home__spNoibat__title uk-h2 uk-margin-remove">Tin tức mới</h2>
                             <div class="item__10 home__blog__txt">Các sự kiện sắp tới, cẩm nang và tin tức mới nhất từ Fingo</div>
                         </div>
                         <div class="uk-width-expand">
                             <div class="uk-child-width-1-3@m uk-grid-small uk-grid-20-m" uk-grid>
                                 <div>
-                                    <div class="home__blog__card uk-card uk-card-default">
-                                        <div class="uk-cover-container">
+                                    <div class="home__blog__card uk-card uk-card-default animation" uk-scrollspy-class="uk-animation-slide-bottom-small">
+                                        <div class="uk-cover-container uk-background-muted">
                                             <img src="https://picsum.photos/285/250/?random=0" alt="" uk-cover="">
                                             <canvas width="285" height="250"></canvas>
                                         </div>
-                                        <div class="uk-card-body">
+                                        <div class="uk-card-body home__blog__card__body">
                                             <div class="home__blog__card__label">Kiến thức vay</div>
-                                            <h3 class="uk-h3 home__blog__card__title item__10 uk-margin-remove-bottom"><a href="">Hướng dẫn sử dụng?...</a></h3>
+                                            <h3 class="uk-h3 home__blog__card__title item__10 uk-margin-remove-bottom">Hướng dẫn sử dụng?...</h3>
                                             <div class="uk-child-width-auto item__10" uk-grid>
                                                 <div>
                                                     <span class="home__blog__card__txtSmall" uk-icon="icon: calendar; ratio:0.8;">17/10/2022</span>
@@ -1044,17 +1070,18 @@
                                             </div>
                                             <div class="home__blog__card__desc item__10">Các thông tin mới nhất luôn được  cập nhật...</div>
                                         </div>
+                                        <a href="blog-detail.php" class="uk-position-cover"></a>
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="home__blog__card uk-card uk-card-default">
-                                        <div class="uk-cover-container">
+                                    <div class="home__blog__card uk-card uk-card-default animation" uk-scrollspy-class="uk-animation-slide-bottom-small">
+                                        <div class="uk-cover-container uk-background-muted">
                                             <img src="https://picsum.photos/285/250/?random=1" alt="" uk-cover="">
                                             <canvas width="285" height="250"></canvas>
                                         </div>
-                                        <div class="uk-card-body">
+                                        <div class="uk-card-body home__blog__card__body">
                                             <div class="home__blog__card__label">Tài chính cá nhân</div>
-                                            <h3 class="uk-h3 home__blog__card__title item__10 uk-margin-remove-bottom"><a href="">Hướng dẫn sử dụng?...</a></h3>
+                                            <h3 class="uk-h3 home__blog__card__title item__10 uk-margin-remove-bottom">Hướng dẫn sử dụng?...</h3>
                                             <div class="uk-child-width-auto item__10" uk-grid>
                                                 <div>
                                                     <span class="home__blog__card__txtSmall" uk-icon="icon: calendar; ratio:0.8;">17/10/2022</span>
@@ -1065,17 +1092,18 @@
                                             </div>
                                             <div class="home__blog__card__desc item__10">Các thông tin mới nhất luôn được  cập nhật...</div>
                                         </div>
+                                        <a href="blog-detail.php" class="uk-position-cover"></a>
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="home__blog__card uk-card uk-card-default">
-                                        <div class="uk-cover-container">
+                                    <div class="home__blog__card uk-card uk-card-default animation" uk-scrollspy-class="uk-animation-slide-bottom-small">
+                                        <div class="uk-cover-container uk-background-muted">
                                             <img src="https://picsum.photos/285/250/?random=2" alt="" uk-cover="">
                                             <canvas width="285" height="250"></canvas>
                                         </div>
-                                        <div class="uk-card-body">
+                                        <div class="uk-card-body home__blog__card__body">
                                             <div class="home__blog__card__label">Kiến thức vay</div>
-                                            <h3 class="uk-h3 home__blog__card__title item__10 uk-margin-remove-bottom"><a href="">Hướng dẫn sử dụng?...</a></h3>
+                                            <h3 class="uk-h3 home__blog__card__title item__10 uk-margin-remove-bottom">Hướng dẫn sử dụng?...</h3>
                                             <div class="uk-child-width-auto item__10" uk-grid>
                                                 <div>
                                                     <span class="home__blog__card__txtSmall" uk-icon="icon: calendar; ratio:0.8;">17/10/2022</span>
@@ -1086,6 +1114,7 @@
                                             </div>
                                             <div class="home__blog__card__desc item__10">Các thông tin mới nhất luôn được  cập nhật...</div>
                                         </div>
+                                        <a href="blog-detail.php" class="uk-position-cover"></a>
                                     </div>
                                 </div>
                             </div>

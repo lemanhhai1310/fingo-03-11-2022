@@ -1,10 +1,403 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <meta http-equiv="REFRESH" content="1800"/>
+    <title>Fingo - Blog Detail</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <!--CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.11/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="style.css?v=1667662913">
 
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.11/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.11/dist/js/uikit-icons.min.js"></script>
+    <script src="js/app.js?v=1667662913"></script>
+</head>
+<body class="blog-detail">
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+     attribution=setup_tool
+     page_id="2428809380682169"
+     logged_in_greeting="Bạn cần cắt HTML/CSS? Hãy chat ngay với chúng tôi"
+     logged_out_greeting="Bạn cần cắt HTML/CSS? Hãy chat ngay với chúng tôi">
+</div>
+<script>
+    defer(function() {
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml            : true,
+                version          : 'v5.0'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    }, 5000);
+</script><!--app-->
+<div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
+
+    <!--header-->
+    <header class="header" uk-sticky>
+
+        <!--header__top-->
+        <div class="header__top uk-visible@m">
+            <div class="uk-container uk-container-expand">
+                <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                    <div class="uk-navbar-left">
+                        <div class="uk-navbar-item">
+                            <div class="header__top__langSwitch uk-border-pill uk-visible@m uk-overflow-hidden">
+                                <div class="header__top__langSwitch__box uk-border-pill uk-grid-collapse uk-child-width-auto uk-grid">
+                                    <label>
+                                        <input class="uk-radio header__top__langSwitch__radio" type="radio" name="radio2" checked>
+                                        <div class="header__top__langSwitch__txt uk-border-pill header__top__langSwitch__txt--en">
+                                            En
+                                        </div>
+                                    </label>
+                                    <label>
+                                        <input class="uk-radio header__top__langSwitch__radio" type="radio" name="radio2">
+                                        <div class="header__top__langSwitch__txt uk-border-pill header__top__langSwitch__txt--vi">
+                                            Vi
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-navbar-center">
+                        <ul class="uk-navbar-nav">
+                            <li class="phone"><a href="tel:0899938383">08 999 38383</a></li>
+                            <li class="email"><a href="mailto:info@fingo.vn">info@fingo.vn</a></li>
+                        </ul>
+                    </div>
+                    <div class="uk-navbar-right uk-visible@m">
+                        <div>
+                            <a class="uk-navbar-toggle header__top__iconSearch" uk-search-icon href="#"></a>
+                            <div class="uk-drop" uk-drop="mode: click; pos: left-center; offset: 0">
+                                <form class="uk-search uk-search-navbar uk-width-1-1">
+                                    <input class="uk-search-input" type="search" placeholder="Tìm kiếm..." aria-label="Search" autofocus>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="uk-navbar-item">
+                            <a href="#" class="header__top__iconSocial header__top__iconSocial--telegram uk-icon-link uk-margin-small-right" uk-icon="vimeo" uk-tooltip="title: Telegram"></a>
+                            <a href="#" class="header__top__iconSocial header__top__iconSocial--fb uk-icon-link uk-margin-small-right" uk-icon="facebook" uk-tooltip="title: Facebook"></a>
+                            <a href="#" class="header__top__iconSocial header__top__iconSocial--dribbble uk-icon-link uk-margin-small-right" uk-icon="dribbble" uk-tooltip="title: Dribbble"></a>
+                            <a href="#" class="header__top__iconSocial header__top__iconSocial--instagram uk-icon-link uk-margin-small-right" uk-icon="instagram" uk-tooltip="title: Instagram"></a>
+                            <a href="#" class="header__top__iconSocial header__top__iconSocial--twitter uk-icon-link" uk-icon="twitter" uk-tooltip="title: Twitter"></a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--/header__top-->
+
+        <!--header__bottom-->
+        <div class="header__bottom">
+            <div class="uk-container uk-container-expand">
+                <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                    <div class="uk-navbar-left">
+                        <a href="." class="uk-navbar-item uk-logo uk-visible@m"><img src="images/logo_fingo_h.png" alt=""></a>
+                        <a class="header__bottom__menuBtn uk-navbar-toggle uk-hidden@m uk-light" href="#">
+                            <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
+                        </a>
+                    </div>
+                    <div class="uk-navbar-center">
+                        <a href="." class="uk-navbar-item uk-logo uk-hidden@m"><img src="images/Logo_white.png" alt=""></a>
+                        <ul class="uk-navbar-nav uk-visible@m">
+                            <li class="uk-active"><a href=".">trang chủ</a></li>
+                            <li><a href="#">đăng ký vay tiền</a></li>
+                            <li><a href="#">MỞ THẺ TÍN DỤNG</a></li>
+                            <li><a href="#">ĐĂNG KÝ ĐẠI LÝ</a></li>
+                            <li><a href="#">tuyển dụng</a></li>
+                            <li><a href="blog.php">tin tức</a></li>
+                            <li><a href="#">banker đăng nhập</a></li>
+                        </ul>
+                    </div>
+                    <div class="uk-navbar-right">
+                        <div class="uk-navbar-item">
+                            <a href="" class="uk-visible@m header__bottom__btn uk-button uk-button-default uk-border-pill" uk-toggle="cls: uk-button-small; mode: media; media: (max-width: 959.8px)">Liên hệ</a>
+                            <div class="uk-hidden@m uk-light" uk-form-custom="target: > * > span:last-child">
+                                <select class="selectLanguage" aria-label="Custom controls">
+                                    <option value="en">En</option>
+                                    <option value="vi">Vi</option>
+                                </select>
+                                <span class="uk-link header__bottom__selectLang">
+                                    <span class="header__bottom__selectLang__icon" uk-icon="icon: pencil"></span>
+                                    <span></span>
+                                </span>
+                            </div>
+                            <script>
+                                $('.selectLanguage option:selected').each(function () {
+                                    $(".header__bottom__selectLang__icon").addClass($(this).val());
+                                });
+
+                                $(document).on('change', '.selectLanguage', function(e) {
+                                    $('.selectLanguage option').each(function () {
+                                        $(".header__bottom__selectLang__icon").removeClass($(this).val());
+                                    });
+                                    var idSize = $(this).val();
+                                    $(".header__bottom__selectLang__icon").addClass(idSize);
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </nav>
+                <form class="uk-search header__bottom__formSearch uk-search-default uk-width-1-1 uk-hidden@m uk-margin-small-bottom">
+                    <span class="uk-search-icon-flip" uk-search-icon></span>
+                    <input class="header__bottom__formSearch__input uk-form-large uk-search-input uk-border-pill" type="search" placeholder="Tìm kiếm..." aria-label="Search" aria-label="Search">
+                </form>
+            </div>
+        </div>
+        <!--/header__bottom-->
+
+    </header>
+    <!--/header--><div class="uk-section-xsmall blog__boxBreadcrumb" uk-sticky="offset: 151; media: @m">
+    <div class="uk-container uk-padding-remove">
+        <div class="uk-overflow-auto home__overflow__scrollbar">
+            <ul class="blog__breadcrumb uk-breadcrumb uk-flex-center uk-flex uk-flex-nowrap">
+                <li><a href="." uk-icon="icon: home"></a></li>
+                <li><a href="blog.php">Blog</a></li>
+                <li><a href="">Tài chính cá nhân</a></li>
+                <li><span>Vay tiền NÓNG Online, nhận tiền LIỀN TAY sau 30 phút</span></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    <div class="uk-section-small blog__content" uk-height-viewport="offset-top: true">
+        <div class="uk-container">
+            <div class="blog__content__coverImg uk-cover-container uk-background-muted home__boxSpace">
+                <img src="https://picsum.photos/1200/391/?random=1667662913" alt="" uk-cover="">
+                <canvas class="uk-visible@m" width="1200" height="391"></canvas>
+                <canvas class="uk-hidden@m" width="450" height="300"></canvas>
+            </div>
+            <div class="uk-margin-top uk-grid-match uk-grid-20-m" uk-grid>
+                <div class="uk-width-expand">
+                    <div class="">
+                        <div class="uk-margin" uk-grid>
+                            <div class="uk-width-expand">
+                                <div class="uk-child-width-auto uk-grid" uk-grid="">
+                                    <div class="uk-first-column">
+                                        <span class="home__blog__card__txtSmall uk-icon" uk-icon="icon: calendar; ratio:0.8;">17/10/2022<svg width="16" height="16" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M 2,3 2,17 18,17 18,3 2,3 Z M 17,16 3,16 3,8 17,8 17,16 Z M 17,7 3,7 3,4 17,4 17,7 Z"></path><rect width="1" height="3" x="6" y="2"></rect><rect width="1" height="3" x="13" y="2"></rect></svg></span>
+                                    </div>
+                                    <div>
+                                        <span class="home__blog__card__txtSmall uk-icon" uk-icon="icon: heart; ratio:0.8;">23<svg width="16" height="16" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="#000" stroke-width="1.03" d="M10,4 C10,4 8.1,2 5.74,2 C3.38,2 1,3.55 1,6.73 C1,8.84 2.67,10.44 2.67,10.44 L10,18 L17.33,10.44 C17.33,10.44 19,8.84 19,6.73 C19,3.55 16.62,2 14.26,2 C11.9,2 10,4 10,4 L10,4 Z"></path></svg></span>
+                                    </div>
+                                </div>
+                                <div class="home__blog__card__label item__10">Giải trí</div>
+                            </div>
+                            <div class="uk-width-auto">
+                                <a href="" uk-icon="icon: forward" class="blog__content__btnShare uk-button uk-button-default uk-border-pill">Chia sẻ</a>
+                            </div>
+                        </div>
+                        <article class="uk-article blog__article">
+                            <h1 class="uk-article-title">Vay tiền NÓNG Online, nhận tiền LIỀN TAY sau 30 phút</h1>
+                            <p>Vay tiền nóng online trong ngày đến nay đã là một xu thế của xã hội công nghiệp hoá và hiện đại hóa hiện nay. Nhưng bạn có biết những nơi nào đã và đang cho vay nóng với lãi suất thấp và uy tín nhất không?</p>
+                            <figure>
+                                <img src="images/image-12.png" alt="">
+                                <figcaption></figcaption>
+                            </figure>
+                            <p>Vay tiền nóng online tại Tp.HCM, Hà Nội và các tỉnh huyện lân cận. Thủ tục vay tiền nóng online cực kỳ đơn giản, giải ngân nhanh trong ngày là xu thế vay tiền nhanh hiện nay. Bạn hoàn toàn có thể vay và nhận được tiền về tài khoản ngân hàng trong vòng 30 phút.</p>
+                            <p>Vậy, Fingo là ai và sẽ giúp bạn như thế nào? Chúng tôi là tổ chức tài chính cho mượn tiền nóng online uy tín và nhanh nhất hiện nay.</p>
+                        </article>
+                    </div>
+                </div>
+                <div class="uk-width-1-4@m">
+                    <aside class="blog__blockContent__aside">
+                        <div class="uk-position-z-index-zero" uk-sticky="end: true; offset: 211;">
+                            <div class="uk-margin">
+                                <h4 class="uk-h4 blog__blockContent__aside__card__title">Mục lục</h4>
+                                <div class="uk-card uk-card-default blog__mucluc">
+                                    <ul class="uk-nav uk-nav-default">
+                                        <li class="uk-active"><a href="#">1. Thủ tục vay tiền nóng online cực kỳ đơn giản và dễ dàng</a></li>
+                                        <li><a href="#">2. Những ưu đãi khi vay tiền nóng online</a></li>
+                                        <li><a href="#">3. Lợi ích khi vay tiền nóng online</a></li>
+                                        <li><a href="#">4. Đối tượng cho vay nóng online</a></li>
+                                        <li><a href="#">5.Khu vực được hỗ trợ vay tiền nóng online nhanh nhất</a></li>
+                                        <li><a href="#">6. Hạn mức khi vay tiền nóng bằng CMND và sổ hộ khẩu</a></li>
+                                        <li><a href="#">7. Thời gian giải ngân nhanh chóng đến ngỡ ngàng</a></li>
+                                        <li><a href="#">8. Quy trình vay tiền nóng online</a></li>
+                                        <li><a href="#">9. Lãi suất vay nóng online như thế nào</a></li>
+                                        <li><a href="#">10. Hình thức thanh toán</a></li>
+                                        <li><a href="#">11. Thông tin của khách hàng được bảo mật tuyệt đối 100%</a></li>
+                                        <li><a href="#">12. Thời gian vay tiền nóng tư nhân trực tuyến 24/7</a></li>
+                                        <li><a href="#">Tổng kết</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="blog__blockContent__aside__card uk-card uk-card-body uk-padding-small uk-card-default uk-height-min-medium">
+                                <h4 class="uk-h4 uk-text-center blog__blockContent__aside__card__title">Bài viết đọc nhiều</h4>
+                                <ul class="uk-nav uk-nav-divider blog__blockContent__aside__navList">
+                                    <li><a href="blog-detail.php" data-number="1">Hướng dẫn kiểm tra số CMND, CCCD Online nhanh và chính xác nhất 2020</a></li>
+                                    <li><a href="blog-detail.php" data-number="2">Vay tiền không thế chấp, không cần chứng minh thu nhập tại TPHCM</a></li>
+                                    <li><a href="blog-detail.php" data-number="3">Vay tiền NÓNG Online, nhận tiền LIỀN TAY sau 30 phút</a></li>
+                                    <li><a href="blog-detail.php" data-number="4">Nợ xấu CIC là gì? Nợ xấu có vay tiền được không? Hướng dẫn tra cứu CIC</a></li>
+                                    <li><a href="blog-detail.php" data-number="5">Giải đáp thắc mắc về việc mở thẻ ATM và những lưu ý cần biết khi mở thẻ</a></li>
+                                </ul>
+                            </div>                    </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer uk-position-relative">
+        <div class="footer__bgCanvas uk-cover-container uk-position-top-center">
+            <canvas width="2194" height="386"></canvas>
+        </div>
+        <div class="footer__content uk-position-relative">
+            <div class="uk-container">
+                <div class="footer__item-48-20 footer__content__top">
+                    <div class="footer__content__boxForm uk-flex uk-flex-middle uk-cover-container uk-background-image@m uk-background-cover" data-src="images/Frame498.png" uk-img>
+                        <div class="uk-width-1-1 uk-card uk-card-body uk-light">
+                            <div class="uk-flex-middle uk-grid-small uk-grid-60-m uk-child-width-auto@s uk-flex-center" uk-grid>
+                                <div>
+                                    <h3 class="footer__content__boxForm__title uk-h3 uk-margin-remove">Để lại email nhận ưu đãi từ Fingo</h3>
+                                </div>
+                                <div>
+                                    <form class="uk-position-relative">
+                                        <input class="footer__content__boxForm__input uk-border-pill uk-input uk-form-large" type="text" placeholder="Email Address" aria-label="Large">
+                                        <button type="button" class="footer__content__boxForm__btnSubmit uk-button uk-button-large uk-border-pill uk-button-secondary" uk-icon="reply"></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__item-48-20">
+                    <div class="uk-child-width-1-4@m uk-child-width-1-2 uk-grid-20 uk-grid-30-m" uk-grid>
+                        <div>
+                            <div class="footer__item-19-15">
+                                <h4 class="uk-h4 uk-margin-remove footer__content__title">Vay tiền nhanh</h4>
+                            </div>
+                            <div class="footer__item-19-15">
+                                <ul class="footer__content__nav uk-nav uk-nav-default">
+                                    <li><a href="">Tamo</a></li>
+                                    <li><a href="">Senmo</a></li>
+                                    <li><a href="">Vamo</a></li>
+                                    <li><a href="">Robocash</a></li>
+                                    <li><a href="">ATM online</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="footer__item-19-15">
+                                <h4 class="uk-h4 uk-margin-remove footer__content__title">Vay tiền trả góp</h4>
+                            </div>
+                            <div class="footer__item-19-15">
+                                <ul class="footer__content__nav uk-nav uk-nav-default">
+                                    <li><a href="">Mirae Asset Finance</a></li>
+                                    <li><a href="">MCredit</a></li>
+                                    <li><a href="">Shinhan finance</a></li>
+                                    <li><a href="">Lotte Finance</a></li>
+                                    <li><a href="">Easy Credit</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="footer__item-19-15">
+                                <h4 class="uk-h4 uk-margin-remove footer__content__title">Vay tín chấp</h4>
+                            </div>
+                            <div class="footer__item-19-15">
+                                <ul class="footer__content__nav uk-nav uk-nav-default">
+                                    <li><a href="">VpBank</a></li>
+                                    <li><a href="">Vietcombank</a></li>
+                                    <li><a href="">Shinhan Bank</a></li>
+                                    <li><a href="">ABBank</a></li>
+                                    <li><a href="">Tinvay</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="footer__item-19-15">
+                                <h4 class="uk-h4 uk-margin-remove footer__content__title">Cầm đồ online</h4>
+                            </div>
+                            <div class="footer__item-19-15">
+                                <ul class="footer__content__nav uk-nav uk-nav-default">
+                                    <li><a href="">F88</a></li>
+                                    <li><a href="">TienNgay</a></li>
+                                    <li><a href="">Tima</a></li>
+                                    <li><a href="">Vietmoney</a></li>
+                                    <li><a href="">Dongshopsun</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__item-48-20">
+                    <div class="footer__item-24-20">
+                        <div class="uk-child-width-1-2@m uk-grid-20 uk-grid-30-m" uk-grid>
+                            <div>
+                                <div class="footer__item-19-15">
+                                    <h4 class="uk-h4 uk-margin-remove footer__content__title">Thông tin</h4>
+                                </div>
+                                <div class="footer__item-19-15">
+                                    <div class="footer__content__desc">Fingo Việt Nam được thành lập vào năm 2015. Dựa trên nền tảng công nghệ, Fingo cam kết mang đến những giải pháp tài chính tối ưu nhất đến với khách hàng.</div>
+                                </div>
+                                <div class="footer__item-30-15">
+                                    <div class="uk-child-width-auto@s uk-child-width-1-2" uk-grid>
+                                        <div>
+                                            <a href=""><img src="images/Frame-logo.png" alt=""></a>
+                                        </div>
+                                        <div>
+                                            <a href=""><img src="images/DMCA_logo-std-btn225w1.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="footer__item-19-15">
+                                    <h4 class="uk-h4 uk-margin-remove footer__content__title">Trụ sở chính</h4>
+                                </div>
+                                <div class="footer__item-19-15">
+                                    <ul class="footer__content__listAddress uk-list uk-margin-remove">
+                                        <li class="maps">Trụ sở chính: 15 Thân Nhân Trung, P13, Tân Bình, TPHCM</li>
+                                        <li class="phone">Hotline: 08 999 38383</li>
+                                        <li class="email">Email: info@fingo.vn</li>
+                                    </ul>
+                                </div>
+                                <div class="footer__item-48-20">
+                                    <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
+                                    <a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
+                                    <a href="" class="uk-icon-button" uk-icon="youtube"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__item-24-20">
+                        <ul class="footer__content__subnav uk-subnav uk-subnav-divider uk-margin-remove-bottom uk-flex-center">
+                            <li><a href="#">Chính sách bảo mật</a></li>
+                            <li><a href="#">Quy chế hoạt động</a></li>
+                            <li><a href="#">Chính sách đổi tra</a></li>
+                            <li><a href="#">Cơ hội việc làm</a></li>
+                            <li><a href="#">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__item-24-20">
+                        <div class="uk-position-relative footer__content__line">
+                            <hr class="uk-margin-remove">
+                        </div>
+                    </div>
+                    <div class="footer__item-24-20 uk-text-center">
+                        <div class="footer__content__copyright">© 2021 - Bản quyền thuộc về tập đoàn Fingo Việt Nam  ("Fingo"). Fingo sử dụng nền tảng công nghệ trí tuệ nhân tạo để kết nối người đi vay với đối tác cho vay, Fingo không hoạt động như người đi vay hay đối tác cho vay. Tuyên bố miễn trừ trách nhiệm : Tất cả các ưu đãi và sản phẩm trên nền tảng fingo.vn đại diện cho dữ liệu sản phẩm hiện tại và không ràng buột người nộp đơn trước khi hợp đồn được ký kết và áp dụng. Thông tin sản phẩm trên trang web fingo.vn có thể thay đổi bất kỳ lúc nào mà không cần thông báo trước để luôn cập nhật những thông tin và mức giá mới nhất. HIện tại tất cả các sản phẩm chỉ có sẵn tại Việt Nam</div>
+                    </div>
+                    <div class="footer__item-24-20">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<!--/app-->
 </body>
 </html>
