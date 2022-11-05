@@ -18,8 +18,8 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.11/dist/js/uikit-icons.min.js"></script>
     <script src="js/app.js?v=<?php echo(time()) ?>"></script>
 </head>
-<body class="">
-<?php //require "template-parts/commons/facebook_chat.php"; ?>
+<body class="<?= (isset($bodyClass))?$bodyClass:'' ?>">
+<?php require "template-parts/commons/facebook_chat.php"; ?>
 <!--app-->
 <div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
 

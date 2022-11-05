@@ -522,7 +522,7 @@
                                         </div>
                                         <div class="home__blog__card__desc item__10">Các thông tin mới nhất luôn được  cập nhật...</div>
                                     </div>
-                                    <a href="" class="uk-position-cover"></a>
+                                    <a href="blog-detail.php" class="uk-position-cover"></a>
                                 </div>
                             </div>
                             <?php endforeach; ?>

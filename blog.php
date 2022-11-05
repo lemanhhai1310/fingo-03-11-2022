@@ -1,5 +1,5 @@
 <?php $data["title"] = "Blog"; ?>
-<?php $bodyClass = '' ?>
+<?php $bodyClass = 'blog' ?>
 <?php require "template-parts/layouts/header.php"; ?>
 <div class="uk-background-muted">
     <div class="uk-section-xsmall uk-text-center" uk-toggle="cls: uk-section-small; mode: media; media: @m">
@@ -47,7 +47,7 @@
                             </div>
                         </div>
                         <div class="home__blog__card__label item__10 uk-visible@m">Giải trí</div>
-                        <h3 class="uk-h3 home__blog__card__title home__blog__card__title--c1 item__10 uk-margin-remove-bottom"><a href="">Ahn Yu Jin - nữ thần tượng tài sắc vẹn toàn ở Kpop</a></h3>
+                        <h3 class="uk-h3 home__blog__card__title home__blog__card__title--c1 item__10 uk-margin-remove-bottom"><a href="blog-detail.php">Ahn Yu Jin - nữ thần tượng tài sắc vẹn toàn ở Kpop</a></h3>
                         <div class="home__blog__card__desc item__10">Thẻ tín dụng (Credit Card) là thẻ do ngân hàng phát hành cho phép bạn mượn trước tiền của ngân hàng để mua hàng với điều kiện bạn phải hoàn trả lại số tiền bạn đã tiêu trong một khoảng thời gian.</div>
                     </div>
                 </div>
@@ -80,7 +80,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <a href="" class="uk-position-cover"></a>
+                            <a href="blog-detail.php" class="uk-position-cover"></a>
                         </div>
                     </div>
                     <?php endif; ?>
@@ -121,7 +121,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <a href="" class="uk-position-cover"></a>
+                            <a href="blog-detail.php" class="uk-position-cover"></a>
                         </div>
                     </div>
                     <?php endfor; ?>
@@ -139,21 +139,8 @@
             </div>
             <div class="uk-width-1-4@m">
                 <aside class="blog__blockContent__aside">
-                    <div class="blog__blockContent__aside__card uk-border-rounded uk-position-z-index-zero uk-card uk-card-body uk-padding-small uk-card-default uk-height-min-medium" uk-sticky="end: true; offset: 221;">
-                        <h4 class="uk-h4 uk-text-center blog__blockContent__aside__card__title">Bài viết đọc nhiều</h4>
-                        <ul class="uk-nav uk-nav-divider blog__blockContent__aside__navList">
-                            <?php
-                            $data = array(
-                                'Hướng dẫn kiểm tra số CMND, CCCD Online nhanh và chính xác nhất 2020',
-                                'Vay tiền không thế chấp, không cần chứng minh thu nhập tại TPHCM',
-                                'Vay tiền NÓNG Online, nhận tiền LIỀN TAY sau 30 phút',
-                                'Nợ xấu CIC là gì? Nợ xấu có vay tiền được không? Hướng dẫn tra cứu CIC',
-                                'Giải đáp thắc mắc về việc mở thẻ ATM và những lưu ý cần biết khi mở thẻ',
-                            );
-                            foreach ($data as $k=>$v): ?>
-                            <li><a href="" data-number="<?= $k+1 ?>"><?= $v ?></a></li>
-                            <?php endforeach; ?>
-                        </ul>
+                    <div class="uk-position-z-index-zero" uk-sticky="end: true; offset: 221;">
+                        <?php require "template-parts/layouts/blog.php"; ?>
                     </div>
                 </aside>
             </div>
