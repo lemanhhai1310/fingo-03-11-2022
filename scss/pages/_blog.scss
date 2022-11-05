@@ -1,0 +1,183 @@
+.blog{
+  &__pagination{
+    margin-left: -10px;
+    @include media-breakpoint-up('m'){
+      margin-left: -20px;
+    }
+    >li{
+      padding-left: 10px;
+      @include media-breakpoint-up('m'){
+        padding-left: 20px;
+      }
+      &.uk-active{
+        >*{
+          background: #{$primary-color};
+          color: #FFFFFF;
+        }
+      }
+      >*{
+        $x:36px;
+        width: #{$x};
+        height: #{$x};
+        @include media-breakpoint-up('m'){
+          $x:50px;
+          width: #{$x};
+          height: #{$x};
+        }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #FFFFFF;
+        border-radius: 50%;
+        color: #000000;
+        @extend .fz-16;
+        font-family: $font-BeVietnamPro-Bold;
+        padding: 0;
+      }
+    }
+  }
+  &__boxAds{
+    background: #F2F2F2;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    @include media-breakpoint-up('m'){
+      min-height: 357px;
+    }
+    text-align: center;
+    &__title{
+      color: #4F4F4F;
+      @extend .fz-42;
+      font-family: $font-BeVietnamPro-Bold;
+    }
+    &__desc{
+      color: #4F4F4F;
+      @extend .fz-24;
+      line-height: 1.5;
+      font-family: $font-BeVietnamPro-Medium;
+    }
+  }
+  &__title{
+    color: #{$secondary-color};
+    @extend .fz-36;
+    font-family: $font-BeVietnamPro-SemiBold;
+    line-height: 1.61;
+  }
+  &__navbar{
+    &.uk-sticky{
+      &.uk-active{
+
+      }
+    }
+    &.uk-sticky-below{
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    }
+    .uk-navbar-nav{
+      //gap: 20px;
+      width: max-content;
+      @include media-breakpoint-up('m'){
+        gap: 60px;
+      }
+      >li{
+        @include media-breakpoint-down('s'){
+          $x:15px;
+          &:first-child{
+            margin-left: #{$x};
+          }
+          &:last-child{
+            padding-right: #{$x};
+          }
+        }
+        >a{
+          text-transform: inherit;
+          color: #333333;
+          @extend .fz-20;
+          font-family: $font-BeVietnamPro-Bold;
+          position: relative;
+          min-height: 50px;
+          &:before{
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            right: calc(102% - 0px);
+            bottom: 0;
+            height: 1px;
+            background-color: currentColor;
+            transition: .3s ease-in-out;
+            transition-property: right;
+          }
+          &:hover{
+            color: #{$primary-color};
+            &:before{
+              right: 0;
+            }
+          }
+        }
+        &.uk-active{
+          >a{
+            color: #{$primary-color};
+            &:before{
+              right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__blockContent{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @include media-breakpoint-up('m'){
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    &__aside{
+      &__card{
+        @include media-breakpoint-up('m'){
+          border-radius: 20px;
+        }
+        &__title{
+          color: #{$secondary-color};
+          @extend .fz-24;
+          line-height: (35/24);
+          font-family: $font-BeVietnamPro-ExtraBold;
+        }
+      }
+      &__navList{
+        >li{
+          &:nth-child(n+2){
+            @include media-breakpoint-up('m'){
+              $x:15px;
+              margin-top: #{$x} !important;
+              padding-top: #{$x} !important;
+            }
+          }
+          >a{
+            letter-spacing: -0.0033em;
+            color: #333333;
+            line-height: 1.78;
+            @extend .fz-18;
+            padding-left: 40px;
+            @include media-breakpoint-up('m'){
+              padding-left: 50px;
+            }
+            position: relative;
+            &:hover{
+              color: #{$primary-color};
+            }
+            &:before{
+              content: attr(data-number);
+              position: absolute;
+              left: 0;
+              top: 50%;
+              transform: translateY(-50%);
+              color: currentColor;
+              @extend .fz-48;
+              font-family: $font-BeVietnamPro-Bold;
+            }
+          }
+        }
+      }
+    }
+  }
+}

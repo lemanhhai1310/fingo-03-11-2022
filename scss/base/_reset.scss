@@ -2,9 +2,11 @@ body{
   font-family: $font-BeVietnamPro-Regular;
   background: #{$primary-color};
   @include media-breakpoint-up('m'){
-    background: #FAFAFA;
+    background-color: #f5f5f5;
   }
 }
 #app{
-  background: #FFFFFF;
+  @include media-breakpoint-down('s'){
+    background: #FFFFFF;
+  }
 }

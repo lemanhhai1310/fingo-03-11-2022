@@ -83,20 +83,20 @@
             <div class="uk-container uk-container-expand">
                 <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
                     <div class="uk-navbar-left">
-                        <a href="" class="uk-navbar-item uk-logo uk-visible@m"><img src="images/logo_fingo_h.png" alt=""></a>
+                        <a href="." class="uk-navbar-item uk-logo uk-visible@m"><img src="images/logo_fingo_h.png" alt=""></a>
                         <a class="header__bottom__menuBtn uk-navbar-toggle uk-hidden@m uk-light" href="#">
                             <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
                         </a>
                     </div>
                     <div class="uk-navbar-center">
-                        <a href="" class="uk-navbar-item uk-logo uk-hidden@m"><img src="images/Logo_white.png" alt=""></a>
+                        <a href="." class="uk-navbar-item uk-logo uk-hidden@m"><img src="images/Logo_white.png" alt=""></a>
                         <ul class="uk-navbar-nav uk-visible@m">
-                            <li class="uk-active"><a href="#">trang chủ</a></li>
+                            <li class="uk-active"><a href=".">trang chủ</a></li>
                             <li><a href="#">đăng ký vay tiền</a></li>
                             <li><a href="#">MỞ THẺ TÍN DỤNG</a></li>
                             <li><a href="#">ĐĂNG KÝ ĐẠI LÝ</a></li>
                             <li><a href="#">tuyển dụng</a></li>
-                            <li><a href="#">tin tức</a></li>
+                            <li><a href="blog.php">tin tức</a></li>
                             <li><a href="#">banker đăng nhập</a></li>
                         </ul>
                     </div>

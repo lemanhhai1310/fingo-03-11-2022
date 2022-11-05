@@ -489,8 +489,8 @@
         <!--Tin tức mới-->
         <div class="home__baochi__item-115-60">
             <div class="home__blog__item-75-30">
-                <div class="uk-grid-small uk-grid-50-m" uk-grid>
-                    <div class="uk-width-1-4@m">
+                <div class="uk-grid-small uk-grid-50-m" uk-scrollspy="target: .animation; cls: uk-animation-slide-left-small; delay: 300" uk-grid>
+                    <div class="uk-width-1-4@m animation">
                         <h2 class="home__spNoibat__title uk-h2 uk-margin-remove">Tin tức mới</h2>
                         <div class="item__10 home__blog__txt">Các sự kiện sắp tới, cẩm nang và tin tức mới nhất từ Fingo</div>
                     </div>
@@ -504,14 +504,14 @@
                             );
                             foreach ($data as $k=>$v): ?>
                             <div>
-                                <div class="home__blog__card uk-card uk-card-default">
-                                    <div class="uk-cover-container">
+                                <div class="home__blog__card uk-card uk-card-default animation" uk-scrollspy-class="uk-animation-slide-bottom-small">
+                                    <div class="uk-cover-container uk-background-muted">
                                         <img src="https://picsum.photos/285/250/?random=<?= $k ?>" alt="" uk-cover="">
                                         <canvas width="285" height="250"></canvas>
                                     </div>
-                                    <div class="uk-card-body">
+                                    <div class="uk-card-body home__blog__card__body">
                                         <div class="home__blog__card__label"><?= $v ?></div>
-                                        <h3 class="uk-h3 home__blog__card__title item__10 uk-margin-remove-bottom"><a href="">Hướng dẫn sử dụng?...</a></h3>
+                                        <h3 class="uk-h3 home__blog__card__title item__10 uk-margin-remove-bottom">Hướng dẫn sử dụng?...</h3>
                                         <div class="uk-child-width-auto item__10" uk-grid>
                                             <div>
                                                 <span class="home__blog__card__txtSmall" uk-icon="icon: calendar; ratio:0.8;">17/10/2022</span>
@@ -522,6 +522,7 @@
                                         </div>
                                         <div class="home__blog__card__desc item__10">Các thông tin mới nhất luôn được  cập nhật...</div>
                                     </div>
+                                    <a href="" class="uk-position-cover"></a>
                                 </div>
                             </div>
                             <?php endforeach; ?>

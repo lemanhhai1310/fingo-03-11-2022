@@ -173,27 +173,39 @@
   }
   &__blog{
     &__card{
-      border-radius: 20px 20px 0px 0px;
+      @include media-breakpoint-up('m'){
+        border-radius: 20px 20px 0px 0px;
+      }
       overflow: hidden;
-      .uk-card-body{
+      &__body{
         padding: 15px 15px;
         @include media-breakpoint-up('m'){
           padding: 30px 12px;
         }
+      }
+      .uk-card-body{
+
       }
       &__title{
         color: #333333;
         @extend .fz-24;
         line-height: 1.33;
         font-family: $font-BeVietnamPro-Medium;
+        @extend .line-clamp-1;
         a{
           color: #333333;
+        }
+        &--c1{
+          @include media-breakpoint-down('s'){
+            margin-top: 0 !important;
+          }
         }
       }
       &__desc{
         color: #161B3D;
         @extend .fz-18;
         line-height: 1.78;
+        @extend .line-clamp-2;
       }
       &__label{
         color: #{$primary-color};
