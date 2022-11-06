@@ -127,7 +127,7 @@
                         <li><a href="#">Quy chế hoạt động</a></li>
                         <li><a href="#">Chính sách đổi tra</a></li>
                         <li><a href="#">Cơ hội việc làm</a></li>
-                        <li><a href="#">Liên hệ</a></li>
+                        <li><a href="contact.php">Liên hệ</a></li>
                     </ul>
                 </div>
                 <div class="footer__item-24-20">
