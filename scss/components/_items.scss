@@ -5,6 +5,12 @@
       margin-top: #{$x}px;
     }
   }
+  $x:21;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+    }
+  }
   $x:19;
   &__#{$x}{
     &:nth-child(n+2){

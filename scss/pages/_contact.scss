@@ -1,0 +1,12 @@
+.contact{
+  $max:58;
+  $min:25;
+  &__item-#{$max}-#{$min}{
+    &:nth-child(n+2){
+      margin-top: #{$min}px;
+      @include media-breakpoint-up('m'){
+        margin-top: #{$max}px;
+      }
+    }
+  }
+}
